@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;1,100&display=swap");
+* {
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.w25 {
+  width: 25% !important;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #252d44;
+}
+/*Aqui inicia a seção de login*/
+/* section.login {
+} */
+section.login .group_box {
+  background-color: #1e2033;
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  margin: 6% 31%;
+}
+section.login .group_box p {
+  color: white;
+  font-size: 25px;
+}
+section.login .group_box .esqueceu_senha {
+  width: 160px;
+  height: 32px;
+  margin: 20px 125px;
+}
+section.login .group_box .esqueceu_senha a {
+  color: black;
+  background-color: #d8d0d0;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+section.login .group_box .esqueceu_senha a:hover {
+  text-decoration: underline;
+}
+section.login .group_box .group_form {
+  width: 100%;
+  margin-top: 20px;
+}
+section.login .group_box .group_form label {
+  color: white;
+  margin-bottom: 5px;
+}
+section.login .group_box .group_form input {
+  width: 100%;
+  margin-top: 10px;
+  height: 25px;
+  border: none;
+  background-color: #1e2033;
+  border-bottom: 1px solid white;
+  color: white;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+#registrar {
+  background-color: #00ff43;
+  color: black;
+  margin-left: 21px;
+  font-weight: bold;
+}
+section.login .group_box .group_form input[type="button"] {
+  width: 85px;
+  height: 38px;
+  border: none;
+  background-color: #00a2ff;
+  cursor: pointer;
+  color: white;
+}
+section.login .group_box .login_plataforma {
+  display: flex;
+}
+section.login .group_box .login_plataforma .box_plataformas {
+  width: 80px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 18px;
+}
+section.login .group_box .login_plataforma .box_plataformas a {
+  color: white;
+  text-decoration: none;
+}
+/*Aqui termina a seção de login*/
