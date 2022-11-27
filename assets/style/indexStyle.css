@@ -25,7 +25,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #252d44;
-  height: 100vh;
 }
 
 /*Aqui inicia a seção de login*/
@@ -71,6 +70,7 @@ section.login .group_box .group_form {
 section.login .group_box .group_form label {
   color: white;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 section.login .group_box .group_form input {
