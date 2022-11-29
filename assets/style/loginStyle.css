@@ -30,7 +30,7 @@ body {
 /*Aqui inicia a seção de login*/
 /* section.login {
 } */
-section.login .group_box {
+section.login .login_group_box {
   background-color: #1e2033;
   width: 400px;
   height: 400px;
