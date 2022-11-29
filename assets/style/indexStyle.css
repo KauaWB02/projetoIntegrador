@@ -38,18 +38,18 @@ section.login .group_box {
   margin: 95px auto;
 }
 
-section.login .group_box p {
+section.login .login_group_box p {
   color: white;
   font-size: 20px;
 }
 
-section.login .group_box .esqueceu_senha {
+section.login .login_group_box .esqueceu_senha {
   width: 160px;
   height: 32px;
   margin: 0px auto;
 }
 
-section.login .group_box .esqueceu_senha a {
+section.login .login_group_box .esqueceu_senha a {
   color: black;
   background-color: white;
   text-decoration: none;
@@ -58,22 +58,22 @@ section.login .group_box .esqueceu_senha a {
   padding: 5px;
 }
 
-section.login .group_box .esqueceu_senha a:hover {
+section.login .login_group_box .esqueceu_senha a:hover {
   text-decoration: underline;
 }
 
-section.login .group_box .group_form {
+section.login .login_group_box .group_form {
   width: 100%;
   margin-top: 20px;
 }
 
-section.login .group_box .group_form label {
+section.login .login_group_box .group_form label {
   color: white;
   margin-bottom: 5px;
   font-size: 20px;
 }
 
-section.login .group_box .group_form input {
+section.login .login_group_box .group_form input {
   width: 100%;
   margin-top: 10px;
   height: 25px;
@@ -92,7 +92,7 @@ section.login .group_box .group_form input {
   font-weight: bold;
 }
 
-section.login .group_box .group_form input[type="button"] {
+section.login .login_group_box .group_form input[type="button"] {
   width: 85px;
   height: 38px;
   border: none;
@@ -101,11 +101,11 @@ section.login .group_box .group_form input[type="button"] {
   color: white;
 }
 
-section.login .group_box .login_plataforma {
+section.login .login_group_box .login_plataforma {
   display: flex;
 }
 
-section.login .group_box .login_plataforma .box_plataformas {
+section.login .login_group_box .login_plataforma .box_plataformas {
   width: 80px;
   color: white;
   text-align: center;
@@ -113,7 +113,7 @@ section.login .group_box .login_plataforma .box_plataformas {
   margin-left: 18px;
 }
 
-section.login .group_box .login_plataforma .box_plataformas a {
+section.login .login_group_box .login_plataforma .box_plataformas a {
   color: white;
   text-decoration: none;
 }
