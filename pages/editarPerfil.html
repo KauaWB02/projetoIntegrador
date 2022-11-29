@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/images/logo.png">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="../assets/style/editarPerfil.css" />
+</head>
+
+<body>
+    <section class="profile_edit">
+        <div class="profile_group_img left">
+            <div class="profile_img">
+                <!--<img src="../assets/images/game.png">-->
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        <div class="profile_group left">
+            <form>
+                <div class="profile_group_form">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="profile_group_form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="profile_group_form">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="profile_group_form">
+                    <label for="game">Jogo Principal:</label>
+                    <select name="game" id="game">
+                        <option value="1">League Of Legends</option>
+                        <option value="2">Fortnite</option>
+                    </select>
+                </div>
+                <div class="profile_group_form">
+                    <label for="biografia">Biografia:</label>
+                    <textarea name="biografia" id="biografia">
+
+                    </textarea>
+                </div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </section>
+</body>
+
+</html>
