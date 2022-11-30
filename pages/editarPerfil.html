@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../assets/images/logo.png">
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
     <title>Editar Perfil</title>
     <link rel="stylesheet" href="../assets/style/editarPerfil.css" />
-</head>
+  </head>
 
-<body>
-    <section class="profile_edit">
-        <div class="profile_group_img left">
-            <div class="profile_img">
-                <!--<img src="../assets/images/game.png">-->
-                <i class="fa-solid fa-user"></i>
+  <body>
+    <section class="profile">
+      <div class="profile_box">
+        <div class="title">
+            <h1>Editar Perfil</h1>
+        </div>
+        <div class="profile_img left">
+          <div class="img">
+            <!--<img src="../assets/images/profile_img/imgProfile2.jpg" alt="" />-->
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <form class="left" action="">
+          <div class="profile_form_position left">
+            <div class="profile_form">
+              <label for="name">Nome:</label>
+              <input type="text" name="name" id="name" />
             </div>
-        </div>
-        <div class="profile_group left">
-            <form>
-                <div class="profile_group_form">
-                    <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="profile_group_form">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="profile_group_form">
-                    <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div class="profile_group_form">
-                    <label for="game">Jogo Principal:</label>
-                    <select name="game" id="game">
-                        <option value="1">League Of Legends</option>
-                        <option value="2">Fortnite</option>
-                    </select>
-                </div>
-                <div class="profile_group_form">
-                    <label for="biografia">Biografia:</label>
-                    <textarea name="biografia" id="biografia">
-
-                    </textarea>
-                </div>
-            </form>
-        </div>
+            <div class="profile_form">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="profile_form">
+              <label for="phone">Telefone:</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="profile_form">
+              <label for="password">Senha:</label>
+              <input type="password" name="password" id="password" />
+            </div>
+          </div>
+          <div class="profile_form_position right">
+            <div class="profile_form">
+              <label for="game">Jogo Principal:</label>
+              <select name="game" id="game">
+                <option value="1">Lol</option>
+                <option value="2">CS-GO</option>
+              </select>
+            </div>
+            <div class="profile_form">
+              <label for="biografia">Biografia:</label>
+              <textarea name="biografia" id="biografia"></textarea>
+            </div>
+            <div class="profile_form">
+              <button><i class="fa-solid fa-check"></i>Salvar</button>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </form>
         <div class="clear"></div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>

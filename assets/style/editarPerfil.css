@@ -29,26 +29,91 @@ body {
 }
 
 /*Inicio editar perfil*/
-
-section.profile_edit {
+section.profile{
+  margin-top: 90px;
+}
+section.profile .profile_box {
+  width: 1000px;
   background-color: #1e2033;
-  width: 600px;
-  margin: 15px auto;
+  margin: 0px auto;
   padding: 40px;
 }
-
-section.profile_edit .profile_group_img {
-  width: 50%;
+/*Aqui inicia css de editar a img do usuário*/
+section.profile .profile_box .profile_img {
+  width: 30%;
+  height: 348px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-section.profile_edit .profile_group {
-  width: 50%;
-}
-
-section.profile_edit .profile_group_form {
+section.profile .profile_box .profile_img .img {
   width: 100%;
+  height: 100%;
 }
-
-section.profile_edit .profile_group_form input {
+section.profile .profile_box .profile_img .img img {
   width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+section.profile .profile_box .profile_img .img i {
+  font-size: 340px;
+  color: black;
+}
+section.profile .profile_box .profile_img .button_edit {
+  width: 10%;
+  margin-top: 68%;
+}
+section.profile .profile_box .profile_img .button_edit i {
+  font-size: 25px;
+  color: coral;
+  cursor: pointer;
+}
+/*Aqui é o fim css de editar a img do usuário*/
+/*Inicia o formulário*/
+section.profile .profile_box form {
+  width: 65%;
+  margin-left: 15px;
+}
+section.profile .profile_box form .profile_form_position .profile_form {
+  width: 100%;
+  margin-top: 15px;
+}
+section.profile .profile_box form .profile_form_position .profile_form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+section.profile .profile_box form .profile_form_position .profile_form input,
+select,
+textarea {
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+section.profile
+  .profile_box
+  form
+  .profile_form_position
+  .profile_form
+  textarea {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  resize: vertical;
+  padding-left: 5px;
+  font-weight: bold;
+}
+section.profile .profile_box form .profile_form_position .profile_form button {
+  width: 30%;
+  height: 32px;
+  margin-top: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #6FFC00;
+}
+section.profile .profile_box form .profile_form_position {
+  width: 45%;
 }
