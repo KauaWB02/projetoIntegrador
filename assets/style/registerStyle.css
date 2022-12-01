@@ -21,11 +21,13 @@
 
 body {
   background-color: #252d44;
+  height: 100vh;
+  display: flex;
 }
 
 /*Inicio da pagina de register*/
 section.register {
-  margin: 100px auto;
+  margin: auto;
   width: 500px;
 }
 
