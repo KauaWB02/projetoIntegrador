@@ -25,17 +25,20 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #252d44;
+  display: flex;
+  height: 100vh;
 }
 
 /*Aqui inicia a seção de login*/
-/* section.login {
-} */
+section.login {
+  margin: auto;
+}
 section.login .login_group_box {
   background-color: #1e2033;
   width: 400px;
   height: 400px;
   padding: 40px;
-  margin: 95px auto;
+  margin: 0px auto;
 }
 
 section.login .login_group_box p {
