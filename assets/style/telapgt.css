@@ -18,25 +18,23 @@ h2{
 /* tela de gamer */
 .box_tela{
     color: #fff;
-    border: 5px solid #1E2033;
     border-radius: 2%;
     background-color: #1E2033;
     text-align: center;
-    margin-top: 10%;
-    margin-right: 60%;
-    margin-left: 5%;
     border: 4px solid #00A2FF;
+    width: 500px;
+    margin-left: 17px;
+    padding: 20px;
 }
 /* tela do trofeu */
 .box_tela{
     color: #fff;
-    border: 5px solid #1E2033;
     border-radius: 2%;
     background-color: #1E2033;
     text-align: center;
-    margin-top: -20%;
-    margin-left: 61%;
-    margin-right: 6%;
     border: 4px solid #00A2FF;
+    width: 500px;
+    margin-left: 17px;
+    padding: 20px;
 }
 
