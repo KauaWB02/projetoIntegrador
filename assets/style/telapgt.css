@@ -16,7 +16,7 @@ h2{
     font-size: 30px;
 }
 /* tela de gamer */
-.tela_1{
+.box_tela{
     color: #fff;
     border: 5px solid #1E2033;
     border-radius: 2%;
@@ -28,7 +28,7 @@ h2{
     border: 4px solid #00A2FF;
 }
 /* tela do trofeu */
-.tela_2{
+.box_tela{
     color: #fff;
     border: 5px solid #1E2033;
     border-radius: 2%;
