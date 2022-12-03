@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <title>Criação de torneio</title>
+    <link rel="stylesheet" href="../assets/style/criarTorneio.css" />
+</head>
+
+<body>
+    <section class="criar_Torneio">
+        <div class="title">
+            <h1>Criar novo torneio</h1>
+        </div>
+        <form action="">
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="name">Nome do torneio:</label>
+                </div>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="name">Modalidade:</label>
+                </div>
+                <div class="torneio_mode_imgs">
+                    <div class="mode_imgs">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <select name="mode" id="mode">
+                    <option value="1">LoL</option>
+                    <option value="2">Cs-Go</option>
+                </select>
+            </div>
+            <div class="torneio_form" id="margin_top">
+                <div class="torneio_label">
+                    <label for="platform">Plataforma:</label>
+                </div>
+                <input type="text" name="platform" id="platform">
+            </div>
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="quantity">Quantidade de participantes:</label>
+                </div>
+                <input type="text" name="quantity" id="quantity">
+            </div>
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="quantity">Participantes:</label>
+                </div>
+                <div class="torneio_buttons">
+                    <div class="jogador">
+                        <span>Jogador</span>
+                    </div>
+                    <div class="equipe">
+                        <span>Equipe</span>
+                    </div>
+                    <div class="input">
+                        <input type="submit" name="criar" value="Criar">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

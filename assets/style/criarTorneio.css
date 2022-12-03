@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Suez+One&family=Teko:wght@300&display=swap');
+* {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252D44;
+  height: 100vh;
+  display: flex;
+}
+
+section.criar_Torneio {
+  margin: auto;
+  width: 1096px;
+}
+
+section.criar_Torneio .title h1 {
+  color: white;
+}
+
+section.criar_Torneio form {
+  background-color: #1E2033;
+  width: 100%;
+  padding: 63px;
+}
+
+section.criar_Torneio form .torneio_form {
+  margin-top: 10px;
+}
+
+section.criar_Torneio form .torneio_form .torneio_label {
+  margin-bottom: 5px;
+}
+
+section.criar_Torneio form .torneio_form .torneio_label label {
+  font-size: 20px;
+  color: white;
+}
+#margin_top{
+  margin-top: 36px;
+}
+section.criar_Torneio form .torneio_form input,select{
+  width: 329px;
+  height: 40px;
+  padding-left: 5px;
+}
+
+section.criar_Torneio form .torneio_form .torneio_buttons {
+  display: flex;
+}
