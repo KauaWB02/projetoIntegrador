@@ -14,13 +14,14 @@ body{
 div.title{
     padding: 25px;
 }
-section.perguntatela{
-    display: flex;
-}
-h2{
+div.title h1{
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+section.perguntatela{
+    display: flex;
 }
 /* tela de gamer */
 .box_tela{
@@ -32,5 +33,17 @@ h2{
     width: 500px;
     padding: 20px;
     margin: 0px auto;
+}
+.box_tela h3{
+    font-family: 'Teko', serif;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00A2FF;
+}
+.box_tela p{
+    font-family: 'Suez One', serif;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 /*Fim da tela de pergunta*/
