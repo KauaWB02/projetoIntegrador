@@ -8,7 +8,11 @@ body{
     margin: 0px;
 	padding: 0px;
 }
+/*Inicio da tela de pergunta*/
 /* o que deseja com nossos serviços */
+section.perguntatela{
+    display: flex;
+}
 h2{
     color: #fff;
     text-align: center;
@@ -23,18 +27,7 @@ h2{
     text-align: center;
     border: 4px solid #00A2FF;
     width: 500px;
-    margin-left: 17px;
     padding: 20px;
+    margin: 0px auto;
 }
-/* tela do trofeu */
-.box_tela{
-    color: #fff;
-    border-radius: 2%;
-    background-color: #1E2033;
-    text-align: center;
-    border: 4px solid #00A2FF;
-    width: 500px;
-    margin-left: 17px;
-    padding: 20px;
-}
-
+/*Fim da tela de pergunta*/
