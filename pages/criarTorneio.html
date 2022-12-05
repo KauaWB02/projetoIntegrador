@@ -7,12 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assets/images/logo.png" />
-    <title>Editar Perfil</title>
+    <title>Criação de torneio</title>
     <link rel="stylesheet" href="../assets/style/criarTorneio.css" />
 </head>
 
 <body>
-
+    <section class="criar_Torneio">
+        <div class="title">
+            <h1>Criar novo torneio</h1>
+        </div>
+        <form action="">
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="name">Nome do torneio:</label>
+                </div>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="name">Modalidade:</label>
+                </div>
+                <div class="torneio_mode_imgs">
+                    <div class="mode_imgs" mode="brawl_stars">
+                        <img src="../assets/images/torneio_img/Brawl Stars.jpg" alt="">
+                    </div>
+                    <div class="mode_imgs" mode="cs_go">
+                        <img src="../assets/images/torneio_img/cs-go.jpg" alt="">
+                    </div>
+                    <div class="mode_imgs" mode="dota2">
+                        <img src="../assets/images/torneio_img/dota2.jpg" alt="">
+                    </div>
+                    <div class="mode_imgs" mode="fortinite">
+                        <img src="../assets/images/torneio_img/fortinite.jpg" alt="">
+                    </div>
+                    <div class="mode_imgs" mode="lol">
+                        <img src="../assets/images/torneio_img/league.jpg" alt="">
+                    </div>
+                    <div class="mode_imgs" mode="wild_rift">
+                        <img src="../assets/images/torneio_img/wildRift.jpg" alt="">
+                    </div>
+                </div>
+                <select name="mode" id="mode">
+                    <option value="1">LoL</option>
+                    <option value="2">Cs-Go</option>
+                </select>
+            </div>
+            <div class="torneio_form" id="margin_top">
+                <div class="torneio_label">
+                    <label for="platform">Plataforma:</label>
+                </div>
+                <input type="text" name="platform" id="platform">
+            </div>
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="quantity">Quantidade de participantes:</label>
+                </div>
+                <input type="text" name="quantity" id="quantity">
+            </div>
+            <div class="torneio_form">
+                <div class="torneio_label">
+                    <label for="quantity">Participantes:</label>
+                </div>
+                <div class="torneio_buttons left">
+                    <div class="jogador">
+                        <span>Jogador</span>
+                    </div>
+                    <div class="equipe">
+                        <span>Equipe</span>
+                    </div>
+                </div>
+                <div class="input_submit right">
+                    <input type="submit" name="criar" value="Criar">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
