@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Suez+One&family=Teko:wght@300&display=swap');
 * {
-  font-family: "Teko", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,6 +10,7 @@ body{
 /*Inicio da tela de pergunta*/
 /* o que deseja com nossos serviços */
 div.title{
+    font-family: "Teko", sans-serif;
     padding: 25px;
 }
 div.title h1{
