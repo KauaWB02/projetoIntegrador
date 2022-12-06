@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+body{
+    background-color: #252D44;
+   
+}
+.Buscar{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 177px;
+    top: 110px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: 1px solid black;
+ 
+}
+.Buscar:hover{
+    box-shadow: 1px 1px gray;
+}
+input{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 410px;
+    top: 110px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+ 
+hr{
+    position: absolute;
+    width: 1210px;
+    height: 0px;
+    left: 115px;
+    top: 177px;
+    border: 1px solid black;
+ 
+}
+.Tabela{
+    position: absolute;
+    width: 1210px;
+    height: 679px;
+    left: 115px;
+    top: 199px;
+    background: #1E2033;
+    border-bottom: 5px outset #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+ 
+.Jogo1{
+   
+    width: 154px;
+    height: 85px;
+    left: 177px;
+    top: 256px;
+    background: #D9D9D9;
+}
+ 
+.Jogo2{
+   
+    width: 154px;
+    height: 85px;
+    left: 409px;
+    top: 256px;
+    background: #D9D9D9;
+}
+ 
+.Jogo3{
+   
+    width: 154px;
+    height: 85px;
+    left: 641px;
+    top: 256px;
+    background: #D9D9D9;
+}
+ 
+.Jogo4{
+   
+    width: 154px;
+    height: 85px;
+    left: 873px;
+    top: 256px;
+    background: #D9D9D9;
+}
+ 
+.Jogo5{  
+    width: 154px;
+    height: 85px;
+    left: 1105px;
+    top: 256px;
+    background: #D9D9D9;
+}
+ 
+.linha_Jogos, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+ 
+.linha_Jogos2, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{    
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.linha_Jogos3, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{  
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.linha_Jogos4, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.mode_imgs{
+    justify-content: space-around;
+    display: flex;
+    object-fit: fill;
+}
