@@ -1,126 +1,151 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Suez+One&family=Teko:wght@300&display=swap');
+
+.left {
+  float: left;
 }
- 
-body{
-    background-color: #252D44;
-   
+
+.right {
+  float: right;
 }
-.Buscar{
-    position: absolute;
-    width: 200px;
-    height: 30px;
-    left: 177px;
-    top: 110px;
-    background: #D9D9D9;
-    border-radius: 5px;
-    border: 1px solid black;
- 
+
+.clear {
+  clear: both;
 }
-.Buscar:hover{
-    box-shadow: 1px 1px gray;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Open Sans", sans-serif;
 }
-input{
-    position: absolute;
-    width: 200px;
-    height: 30px;
-    left: 410px;
-    top: 110px;
-    background: #D9D9D9;
-    border-radius: 5px;
-    border: 1px solid black;
+
+body {
+  background-color: #252D44;
 }
- 
-hr{
-    position: absolute;
-    width: 1210px;
-    height: 0px;
-    left: 115px;
-    top: 177px;
-    border: 1px solid black;
- 
+
+/*Inicia style da pagina de listagem dos torneios*/
+.container {
+  padding: 2vw;
 }
-.Tabela{
-    position: absolute;
-    width: 1210px;
-    height: 679px;
-    left: 115px;
-    top: 199px;
-    background: #1E2033;
-    border-bottom: 5px outset #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    align-items: center;
+
+section.list_torneio {}
+
+section.list_torneio .box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
- 
-.Jogo1{
-   
-    width: 154px;
-    height: 85px;
-    left: 177px;
-    top: 256px;
-    background: #D9D9D9;
+
+section.list_torneio .box .box_list {
+  width: 24%;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E2033;
 }
- 
-.Jogo2{
-   
-    width: 154px;
-    height: 85px;
-    left: 409px;
-    top: 256px;
-    background: #D9D9D9;
+
+section.list_torneio .box .box_list .img {
+  width: 100%;
+  height: 225px;
 }
- 
-.Jogo3{
-   
-    width: 154px;
-    height: 85px;
-    left: 641px;
-    top: 256px;
-    background: #D9D9D9;
+
+section.list_torneio .box .box_list .img img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
- 
-.Jogo4{
-   
-    width: 154px;
-    height: 85px;
-    left: 873px;
-    top: 256px;
-    background: #D9D9D9;
+
+section.list_torneio .box .box_list .title {
+  text-align: justify;
+  padding: 15px;
 }
- 
-.Jogo5{  
-    width: 154px;
-    height: 85px;
-    left: 1105px;
-    top: 256px;
-    background: #D9D9D9;
+
+section.list_torneio .box .box_list .title .name_title {
+  font-size: 25px;
+  margin-bottom: 1%;
+  color: white;
 }
- 
-.linha_Jogos, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-around;
-   
+
+section.list_torneio .box .box_list .title .date {
+  font-size: 15px;
+  color: #838383;
 }
- 
-.linha_Jogos2, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{    
-    display: flex;
-    justify-content: space-around;
+
+section.list_torneio .box .box_list .description {
+  text-align: justify;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
- 
-.linha_Jogos3, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{  
-    display: flex;
-    justify-content: space-around;
+
+section.list_torneio .box .box_list .description .description_mode {
+  margin-right: 15%;
 }
- 
-.linha_Jogos4, .Jogo1, .Jogo2, .Jogo3, .Jogo4, .Jogo5{
-    display: flex;
-    justify-content: space-around;
+
+section.list_torneio .box .box_list .description .description_title {
+  font-size: 25px;
+  margin-bottom: 1%;
+  color: #e5e5e5;
 }
- 
-.mode_imgs{
-    justify-content: space-around;
-    display: flex;
-    object-fit: fill;
+
+section.list_torneio .box .box_list .description .description_name {
+  font-size: 15px;
+  color: darkgray;
+}
+
+section.list_torneio .box .box_list .button_entrar {
+  text-align: center;
+  margin-top: 5%;
+}
+
+section.list_torneio .box .box_list .button_entrar button {
+  border: none;
+  background-color: rgb(8, 8, 150);
+  color: white;
+  padding: 5%;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.list_torneio .box .box_list .button_entrar button:hover {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 5%;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.list_torneio .box .box_list .premios {
+  margin-top: 8%;
+  text-align: center;
+}
+
+section.list_torneio .box .box_list .premios button {
+  margin-top: 2%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: beige;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+section.list_torneio .box .box_list .premios .lugares {
+  display: none;
+}
+
+section.list_torneio .box .box_list .premios .posicao {
+  padding: 15px;
+  color: white;
+}
+
+section.list_torneio .box .box_list .premios .posicao .lugar {
+  font-size: 15px;
+  color: white;
 }
