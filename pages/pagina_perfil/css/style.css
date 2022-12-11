@@ -1,0 +1,236 @@
+body{
+    background-color: #252D44;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+	font-style: normal;
+}
+
+p{
+    color:white;
+}
+
+nav{
+	display: flex;
+	/*position: fixed;*/
+	background-color: #1E2033;
+    height: 10vh;
+    margin-bottom: 5vh;
+	
+}
+
+.menu_header_profile{
+    padding-top: 1.5vh;
+}
+
+nav ul{
+    width: 68.5vw;
+	text-align: center;
+	margin:0;
+    padding-right:25vw;
+}
+
+nav ul li{
+	color: white;
+	justify-content: space-around;
+	display: inline;
+	margin-left: 1vw;	
+	list-style:none;
+	
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size: 2em;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+
+}
+.div_img_logo_header{
+    width: 30vw;
+}
+#img_logo_header{
+    text-align: left;
+    margin-left: -2vw;
+
+    padding:4%;
+}
+
+.div_img_account_header{
+    width: 5vw;
+}
+#img_account_header{
+    text-align: right;
+    margin-right:0;
+
+    padding: 13%;
+}
+
+.body_profile{
+    min-height: 100vh;
+}
+
+.titulo_window_body_profile{
+    color: white;
+    font-size: 1rem;
+    height: 8vh;
+    margin-bottom: 1.5vh;
+
+}
+.titulo_window_body_profile p{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 20vw;
+    
+}
+
+.window_body_profile{
+    display: flex;
+    flex-direction: row;
+    background-color: #1E2033;
+    width: 60vw;
+    height: 70vh;
+    margin-left: 20vw;
+}
+
+
+.column-left_window_body_profile{
+    display: flex;
+    flex-direction: column;
+    width:20vw;
+
+}
+#user_column-left_window_body_profile{
+    width:15vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding: 10%;
+
+    background-color: #252D44;
+    margin-left: 5vw;
+    margin-top:1vh;
+
+    height: 20vh;
+    text-align: center;
+
+}
+#username_profile_column-left_window_body_profile{
+    height: 10vh;
+    background-color: #252D44;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+#jogos_column-left_window_body_profile{
+    display: flex;
+    flex-direction: row;                                                
+
+    width:15vw;
+    height: 10vh;
+    /*padding-left: 5vw;
+    padding-right: 5vw;*/
+    
+    background-color: #252D44;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+    /*padding: 10%;*/   
+    /*object-fit: ;*/
+	text-align: center;
+
+}
+.icon_jogos_column-left_window_body_profile{
+    width:5vw;
+    max-height: 10vh;
+    
+}
+
+
+#img_logo-lol_column-left_window_body_profile{
+   height: 8vh;
+   margin: 1vh;
+}
+
+
+#info_column-left_window_body_profile{
+    width:15vw;
+    height: 20vh;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+    
+    margin-left: 5vw;
+    margin-bottom: 1vh;    
+
+    background-color: #252D44;
+    text-align: center;
+
+}
+
+
+.column-right_window_body_profile{
+    display: flex;
+    flex-direction: column;
+    width:40vw;
+}
+
+#top_column-right_window_body_profile{
+    display: flex;
+    height: 30vh;
+}
+#img_rank_profile{
+    width: 10vw;
+    height: 18vh;
+    margin-left: 0.5vw;
+    background-color: #252D44;
+    text-align: center;
+    padding-top: 3vh;
+    margin-top: 1vh;
+}
+#titulo_rank_profile{
+    margin-left: 0.7vw;
+    margin-top: 1vh;
+    text-align: center;      
+}
+#button-settings_profile{
+    margin-top: 1vh;
+    margin-left: 27vw;
+}
+
+
+
+#mid_column-right_window_body_profile{
+    display: flex;
+    height: 10vh;
+    width:40vw;
+    text-align:center;
+    padding-top: 6%;
+
+
+}
+#titulo_times_column-right_window_body_profile{
+    margin-left: 15vw;
+}
+#titulo_historico_column-right_window_body_profile{
+    margin-left: 9.5vw;
+}
+
+#bot_column-right_window_body_profile{
+    height: 30vh;
+    display: flex;
+    
+}
+#div_times_column-right_window_body_profile{
+    width:12vw;
+    text-align: center;
+    margin-left: 10vw;
+}
+#div_historico_column-right_window_body_profile{
+    width:12vw;
+    text-align: center;
+    margin-left: 1vw;
+}
+
+
+
+
