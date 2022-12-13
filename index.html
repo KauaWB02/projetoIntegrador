@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
@@ -8,37 +9,38 @@
     <link rel="shortcut icon" href="assets/images/logo.png">
     <title>E-Vents</title>
     <link rel="stylesheet" href="assets/style/indexStyle.css">
-    <script src ="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
-      
+    <script src="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
-    
-    <header class ="cabeçalho">
 
-        <img id="logo" src="assets/images/logoheader.jpeg">
-
-        <div class = "opc">
-
-            <h2 id="ini">Ínicio</h2>
-            <h2>Jogos</h2>
-            <h2>Contate-nos</h2>
-            <h2>Sobre nós</h2>
-
-            <a href="pages/register.html"><button id="botao"><b>Iniciar</b></button></a>
-
+    <header>
+        <div class="logo left">
+            <img src="assets/images/logoheader.jpeg" alt="">
         </div>
-
+        <nav class="left">
+            <ul>
+                <li><a href="#">Ínicio</a></li>
+                <li><a href="pages/torneio.html">Torneios</a></li>
+                <li><a href="#contate_nos">Contate-nos</a></li>
+                <li><a href="#sobre_nos">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <div class="button_login right">
+            <a href="pages/login.html">Login</a>
+        </div>
+        <div class="clear"></div>
     </header>
 
     <section class="sec1"></section>
 
-    <section class="sec2">
+    <section class="sec2" id="sobre_nos">
 
-       <h2>Diktigt bener</h2> 
-       <h3>Dibel vasade. Lätede sosm.</h3>
-       <h3>Förarstödjare ståpaddling. Fanyning höl. </h3>
+        <h2>Diktigt bener</h2>
+        <h3>Dibel vasade. Lätede sosm.</h3>
+        <h3>Förarstödjare ståpaddling. Fanyning höl. </h3>
 
     </section>
 
@@ -48,7 +50,7 @@
         <h3>Lörem ipsum gun kosk: inte dolingar, tresyktigt. Dide </h3>
         <h3>sakrologi. Du kan vara drabbad. </h3>
         <h3>Autovidade otonat. Fakivis speling. Du kan vara drabbad</h3>
-        
+
     </section>
 
     <section class="sec4">
@@ -65,21 +67,11 @@
 
     <section class="sec5">
 
-       <div class="info_up">
+        <div class="info_up">
 
-            <div class="info1">
+            <div class="info_box">
 
-                <i id="icon1" class="fa-solid fa-gamepad"></i>
-                <h2>Lorem Ipsum</h2>  
-                <h3>tills doliga vill. Pedov gigavis. </h3>   
-                <h3>Kosa metrolog stenon. Du kan </h3>              
-                <h3>vara drabbad. </h3>              
-                
-            </div>
-
-            <div class="info2">
-
-                <i id="icon2" class="fa-solid fa-satellite-dish"></i>
+                <i class="fa-solid fa-gamepad"></i>
                 <h2>Lorem Ipsum</h2>
                 <h3>tills doliga vill. Pedov gigavis. </h3>
                 <h3>Kosa metrolog stenon. Du kan </h3>
@@ -87,9 +79,9 @@
 
             </div>
 
-            <div class="info3">
+            <div class="info_box">
 
-                <i id="icon3" class="fa-solid fa-ranking-star"></i>
+                <i class="fa-solid fa-satellite-dish"></i>
                 <h2>Lorem Ipsum</h2>
                 <h3>tills doliga vill. Pedov gigavis. </h3>
                 <h3>Kosa metrolog stenon. Du kan </h3>
@@ -97,16 +89,26 @@
 
             </div>
 
-       </div>
+            <div class="info_box">
+
+                <i class="fa-solid fa-ranking-star"></i>
+                <h2>Lorem Ipsum</h2>
+                <h3>tills doliga vill. Pedov gigavis. </h3>
+                <h3>Kosa metrolog stenon. Du kan </h3>
+                <h3>vara drabbad. </h3>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <section class="sec6">
+    <section class="sec6" id="contate_nos">
 
         <div class="complemento">
 
             <div class="saiba_mais">
-                
+
                 <h2>Saiba mais</h2>
                 <h3>Sobre</h3>
                 <h3>Serviços</h3>
@@ -132,11 +134,11 @@
                 <h3>Redes Socias</h3>
 
             </div>
-            
+
         </div>
-        
+
         <div class="redes_sociais">
-            
+
             <i id="margin_icon" class="fa-brands fa-google"></i>
             <i id="margin_icon" class="fa-brands fa-facebook"></i>
             <i id="margin_icon" class="fa-brands fa-twitter"></i>
