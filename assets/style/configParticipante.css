@@ -2,12 +2,16 @@
 *{
     font-family: "Roboto","Open Sans", sans-serif;
 }
+
 body{
     padding: 0;
     margin: 0;
     background-color: #252D44;
     font-family: Roboto;
 }
+
+/*Inicio: header*/
+
 header.cabeçalho{
     width: 100%;
     min-height: 8vh;
@@ -33,4 +37,75 @@ div.opc h2:hover{
     float: left;
     margin-top: 2.1vh;
     margin-left: 1vw;
+}
+
+/*Fim: header*/
+
+section.seção{
+    padding-top: 10vh;
+    margin-left: 21vw;
+    color: white;
+    font-size: 30px;
+}
+div.config{
+    background-color: #1e2033;
+    min-height: 60vh;
+    min-width: 15vw;
+    max-width: 57vw;
+    font-size: 24px;
+}
+div.texto1{
+    display: flex;
+}
+#text-left{
+    margin-left: 2vw;
+}
+#text-right{
+    margin-left: 17vw;
+}
+div.primeira_fileira{
+    display: flex;
+    margin-left: 2vw;
+}
+div.participante{
+    background-color: #D9D9D9;
+    height: 43px;
+    width: 164px;
+    text-align: center;
+    color: black;
+}
+div.organizador{
+    background-color: #D9D9D9;
+    height: 43px;
+    width: 164px;
+    margin-left: 1vw;
+    text-align: center;
+    color: black;
+}
+div.nenhum{
+    background-color: #D9D9D9;
+    height: 43px;
+    width: 164px;
+    margin-left: 1vw;
+    text-align: center;
+    color: black;
+}
+div.jogadores{
+    background-color: #D9D9D9;
+    height: 43px;
+    width: 164px;
+    margin-left: 4vw;
+    text-align: center;
+    color: black;
+}
+div.equipes{
+    background-color: #D9D9D9;
+    height: 43px;
+    width: 164px;
+    margin-left: 1vw;
+    text-align: center;
+    color: black;
+}
+div.segunda_fileira{
+    display: flex;
 }
