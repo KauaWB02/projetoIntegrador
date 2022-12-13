@@ -1,679 +1,907 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Suez+One&family=Teko:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Suez+One&family=Teko:wght@300&display=swap");
 
 .left {
-    float: left;
+  float: left;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .w25 {
-    width: 25% !important;
+  width: 25% !important;
+}
+.w50 {
+  width: 50% !important;
 }
 
 * {
-    font-family: "Roboto", "Open Sans", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #252D44;
+  background-color: #252d44;
 }
+/*Mobile*/
+div.mobile {
+  background-color: #1e2033;
+  padding: 5px;
+}
+div.mobile .menu {
+  font-size: 25px;
+  color: white;
+  padding: 4px;
+  margin-right: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+div.mobile .menu:hover {
+  border-radius: 3px;
+  background-color: gray;
+}
+div.menu_mobile {
+  position: absolute;
+  z-index: 999;
+  background-color: gray;
+  width: 100%;
+}
+div.menu_mobile nav {
+  text-align: center;
+
+}
+div.menu_mobile nav ul li {
+  border-bottom: 3px solid rgb(49, 49, 49);
+  padding: 10px;
+}
+
+/*Fim do menu mobile*/
 /*Header*/
 header {
-    background-color: #1e2033;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  header .logo {
-    padding: 5px;
-    margin: auto;
-  }
-  
-  header nav {
-    margin: 0px auto;
-  }
-  
-  header nav ul {
-    padding: 5px;
-    width: 100%;
-    display: flex;
-    list-style-type: none;
-  }
-  
-  header nav ul li {
-    padding: 10px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    font-weight: bold;
-  }
-  
-  header nav ul li a:hover {
-    color: black;
-    font-weight: bold;
-    background-color: #979799;
-    border-radius: 3px;
-  }
-  
-  header .button_login {
-    padding: 5px;
-    margin: auto;
-  }
-  
-  header .button_login a {
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    background-color: #00FF43;
-    border-radius: 3px;
-  }
-  
-  header .button_login a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #05972c;
-    border-radius: 3px;
-  }
-  
+  background-color: #1e2033;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+header .logo {
+  padding: 5px;
+  margin: auto;
+}
+
+header nav {
+  margin: auto;
+}
+
+header nav ul {
+  padding: 5px !important;
+  width: 100% !important;
+  display: flex !important;
+  list-style-type: none !important;
+  margin: 0px !important;
+}
+
+header nav ul li {
+  padding: 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: black;
+  font-weight: bold;
+  background-color: #979799;
+  border-radius: 3px;
+}
+header #button_login a {
+  padding: 15px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background-color: #00ff43;
+  border-radius: 3px;
+}
+
+header .button_login a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #05972c;
+  border-radius: 3px;
+}
+
 /*Fim header*/
+/*Início: seção 1*/
+
+section.sec1 {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/inicio.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Fim: seção 1*/
+
+/*Inicio: seção 2*/
+
+section.sec2 {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../images/inicio2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.sec2 h2 {
+  margin: 0;
+  padding-top: 10vh;
+  color: white;
+  text-align: center;
+}
+
+section.sec2 h3 {
+  text-align: center;
+  color: white;
+  font-size: 37px;
+}
+
+/*Fim: seçao 2*/
+
+/*Inicio: seção 3*/
+
+section.sec3 {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../images/inicio3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.sec3 h2 {
+  margin: 0%;
+  padding-top: 21vh;
+  padding-left: 23vw;
+  color: #607d8b;
+  font-size: 30px;
+}
+
+section.sec3 h3 {
+  color: white;
+  font-size: 30px;
+  padding-top: 3vh;
+  padding-left: 23vw;
+  margin: 0;
+}
+
+/*Fim: seção 3*/
+
+/*Inicio: seção 4*/
+
+section.sec4 {
+  background-color: #252d44;
+  width: 100%;
+  height: 60vh;
+}
+
+section.sec4 h2 {
+  margin: 0;
+  padding-top: 10vh;
+  padding-left: 37vw;
+  color: #607d8b;
+}
+
+section.sec4 h3 {
+  color: white;
+  margin-left: 39vw;
+  margin-top: 1vh;
+}
+
+/*Fim: seção 4*/
+
+/*Inicio: seção 5*/
+
+section.sec5 {
+  height: 80vh;
+  background-image: url("../images/inicio4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+section.sec5 h3 {
+  color: white;
+}
+
+div.info_up {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+div.info_box {
+  text-align: center;
+  margin-left: 20px;
+}
+
+div.info_box h2 {
+  font-size: 25px;
+  color: #12af3c;
+}
+
+div.info_box i {
+  font-size: 150px;
+  color: #00ff43;
+}
+
+/*Fim: seção 5*/
+
+/*Inicio: seção 6*/
+
+section.sec6 {
+  background-color: #252d44;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+div.complemento {
+  display: flex;
+}
+
+div.complemento h2 {
+  color: #00ff43;
+}
+
+div.complemento h3 {
+  color: white;
+}
+
+div.saiba_mais {
+  margin-left: 15vw;
+  margin-top: 4.6vh;
+}
+
+div.suporte {
+  margin-left: 15vw;
+  margin-top: 4.6vh;
+}
+
+div.contato {
+  margin-left: 15vw;
+  margin-top: 4.6vh;
+}
+
+div.redes_sociais {
+  display: flex;
+  margin-left: 70vw;
+  font-size: 60px;
+  color: #a6a6a6;
+  position: absolute;
+  right: 30px;
+}
+
+#margin_icon {
+  margin-left: 5vh;
+}
+
+/*Fim: seção 6*/
+
+/*Inicio: rodapé*/
+
+section.sec7 {
+  background-color: #252d44;
+  width: 100%;
+  height: 5vh;
+  margin-top: -7.9vh;
+  color: white;
+  text-align: center;
+}
+
+/*Fim do index*/
 
 /*Aqui inicia a seção de login*/
 section.login {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 section.login .login_group_box {
-    background-color: #1e2033;
-    width: 400px;
-    height: 400px;
-    padding: 40px;
-    margin: 0px auto;
+  background-color: #1e2033;
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  margin: 0px auto;
 }
 
 section.login .login_group_box p {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 section.login .login_group_box .esqueceu_senha {
-    width: 162px;
-    margin: 10px auto;
+  width: 162px;
+  margin: 10px auto;
 }
 
 section.login .login_group_box .esqueceu_senha a {
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 2px;
-    font-weight: bold;
-    padding: 5px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 section.login .login_group_box .esqueceu_senha a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 section.login .login_group_box .group_form {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 section.login .login_group_box .group_form label {
-    color: white;
-    margin-bottom: 5px;
-    font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 section.login .login_group_box .group_form input {
-    width: 100%;
-    margin-top: 10px;
-    height: 25px;
-    border: none;
-    background-color: #1e2033;
-    border-bottom: 1px solid white;
-    color: white;
-    border-radius: 2px;
-    padding-left: 5px;
+  width: 100%;
+  margin-top: 10px;
+  height: 25px;
+  border: none;
+  background-color: #1e2033;
+  border-bottom: 1px solid white;
+  color: white;
+  border-radius: 2px;
+  padding-left: 5px;
 }
 
 #registrar {
-    background-color: #00ff43;
-    color: black;
-    font-weight: bold;
+  background-color: #00ff43;
+  color: black;
+  font-weight: bold;
 }
 
 section.login .login_group_box .group_form input[type="button"] {
-    width: 85px;
-    height: 38px;
-    border: none;
-    background-color: #00a2ff;
-    cursor: pointer;
-    color: white;
+  width: 85px;
+  height: 38px;
+  border: none;
+  background-color: #00a2ff;
+  cursor: pointer;
+  color: white;
+}
+section.login .login_group_box .group_form a {
+  color: black;
+  font-weight: bold;
+  background-color: #00ff43;
+  padding: 15px;
 }
 
 section.login .login_group_box .login_plataforma {
-    display: flex;
+  display: flex;
 }
 
 section.login .login_group_box .login_plataforma .box_plataformas {
-    width: 80px;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin-left: 18px;
+  width: 80px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 18px;
 }
 
 section.login .login_group_box .login_plataforma .box_plataformas a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /*Aqui termina a seção de login*/
 
 /*Inicio da pagina de register*/
 section.register {
-    margin: auto;
-    width: 500px;
-    font-family: "Roboto", "Open Sans", sans-serif;
+  margin: 15px auto;
+  width: 500px;
 }
 
 section.register h1 {
-    color: white;
-    font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 section.register .register_form {
-    background-color: #1e2033;
-    padding: 5%;
+  background-color: #1e2033;
+  padding: 5%;
 }
 
 section.register .register_form .register_form_group {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 section.register .register_form .register_form_group label {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
-section.register .register_form .register_form_group label>a {
-    color: #00FF43;
-    font-size: 20px;
+section.register .register_form .register_form_group label > a {
+  color: #00ff43;
+  font-size: 20px;
 }
 
 section.register .register_form .register_form_group input {
-    width: 100%;
-    height: 30px;
-    margin: 15px 0px;
-    background-color: #1e2033;
-    border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    padding-left: 5px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0px;
+  background-color: #1e2033;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  padding-left: 5px;
 }
 
-section.register .register_form .register_form_group input[type=checkbox] {
-    width: 20px;
-    height: 20px;
-    margin: 0px;
-    cursor: pointer;
+section.register .register_form .register_form_group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  cursor: pointer;
 }
 
-section.register .register_form .register_form_group input[type=button] {
-    width: 125px;
-    height: 40px;
-    background-color: #00FF43;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    position: relative;
-    margin: 7px 36.2%;
-    color: black;
+section.register .register_form .register_form_group input[type="button"] {
+  width: 125px;
+  height: 40px;
+  background-color: #00ff43;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  margin: 7px 36.2%;
+  color: black;
 }
 
 /*Fim da pagina de register*/
 
 /*Inicio editar perfil*/
 section.profile {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 section.profile .profile_box {
-    width: 1000px;
-    background-color: #1e2033;
-    margin: 0px auto;
-    padding: 40px;
+  width: 1000px;
+  background-color: #1e2033;
+  margin: 0px auto;
+  padding: 40px;
+}
+section.profile .profile_box .title {
+  color: white;
 }
 
 /*Aqui inicia css de editar a img do usuário*/
 section.profile .profile_box .profile_img {
-    width: 30%;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 30%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 section.profile .profile_box .profile_img .img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 section.profile .profile_box .profile_img .img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 section.profile .profile_box .profile_img .img i {
-    font-size: 300px;
-    color: black;
+  font-size: 300px;
+  color: black;
 }
 
 section.profile .profile_box .profile_img .button_edit {
-    width: 10%;
-    margin-top: 68%;
+  width: 10%;
+  margin-top: 68%;
 }
 
 section.profile .profile_box .profile_img .button_edit i {
-    font-size: 25px;
-    color: coral;
-    cursor: pointer;
+  font-size: 25px;
+  color: coral;
+  cursor: pointer;
 }
 
 /*Aqui é o fim css de editar a img do usuário*/
 /*Inicia o formulário*/
 section.profile .profile_box form {
-    width: 65%;
-    margin-left: 15px;
+  width: 65%;
+  margin-left: 15px;
 }
 
 section.profile .profile_box form .profile_form_position .profile_form {
-    width: 100%;
-    margin-top: 15px;
+  width: 100%;
+  margin-top: 15px;
 }
 
 section.profile .profile_box form .profile_form_position .profile_form label {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 section.profile .profile_box form .profile_form_position .profile_form input,
 select,
 textarea {
-    width: 100%;
-    height: 25px;
-    margin-top: 5px;
-    padding-left: 5px;
-    font-weight: bold;
-    /* background-color: rgba(255, 255, 255, 0.5); */
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
-section.profile .profile_box form .profile_form_position .profile_form textarea {
-    width: 100%;
-    height: 50px;
-    margin-top: 5px;
-    resize: vertical;
-    padding-left: 5px;
-    font-weight: bold;
+section.profile
+  .profile_box
+  form
+  .profile_form_position
+  .profile_form
+  textarea {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  resize: vertical;
+  padding-left: 5px;
+  font-weight: bold;
 }
 
 section.profile .profile_box form .profile_form_position .profile_form button {
-    width: 30%;
-    height: 32px;
-    margin-top: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #6FFC00;
+  width: 30%;
+  height: 32px;
+  margin-top: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #6ffc00;
 }
 
 section.profile .profile_box form .profile_form_position {
-    width: 45%;
+  width: 45%;
 }
 
 /*fim da pagina de editar perfil*/
 
 /*Inicio da tela de pergunta*/
-div.title {
-    font-family: "Teko", sans-serif;
-    padding: 25px;
-}
-
-div.title h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    letter-spacing: 1px;
-}
-
 section.perguntatela {
-    display: flex;
+  display: flex;
+}
+div.pergunta_title {
+  font-family: "Teko", sans-serif;
+  padding: 25px;
+}
+
+div.pergunta_titleh1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 1px;
 }
 
 /* tela de gamer */
-.box_tela {
-    color: #fff;
-    border-radius: 2%;
-    background-color: #1E2033;
-    text-align: center;
-    border: 4px solid #00A2FF;
-    width: 500px;
-    padding: 20px;
-    margin: 0px auto;
+section.perguntatela .box_tela {
+  color: #fff;
+  border-radius: 2%;
+  background-color: #1e2033;
+  text-align: center;
+  border: 4px solid #00a2ff;
+  width: 500px;
+  padding: 20px;
+  margin: 0px auto;
 }
 
-.box_tela h3 {
-    font-family: 'Teko', serif;
-    letter-spacing: 1px;
-    font-size: 40px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #00A2FF;
+section.perguntatela .box_tela h3 {
+  font-family: "Teko", serif;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00a2ff;
 }
 
-.box_tela p {
-    font-family: 'Suez One', serif;
-    letter-spacing: 1px;
-    font-size: 20px;
+section.perguntatela .box_tela p {
+  font-family: "Suez One", serif;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 /*Fim da tela de pergunta*/
 
 /*Inicia a seção de criar torneios*/
 section.criar_Torneio {
-    margin: auto;
-    width: 1096px;
-    font-family: "Roboto", "Open Sans", sans-serif;
+  margin: 15px auto;
+  width: 1096px;
 }
 
 section.criar_Torneio .title h1 {
-    color: white;
+  color: white;
 }
 
 section.criar_Torneio form {
-    background-color: #1E2033;
-    width: 100%;
-    padding: 63px;
+  background-color: #1e2033;
+  width: 100%;
+  padding: 63px;
 }
 
 section.criar_Torneio form .torneio_form {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 section.criar_Torneio form .torneio_form .torneio_label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 section.criar_Torneio form .torneio_form .torneio_label label {
-    font-size: 20px;
-    color: white;
+  font-size: 20px;
+  color: white;
 }
 
 #margin_top {
-    margin-top: 36px;
+  margin-top: 36px;
 }
 
 section.criar_Torneio form .torneio_form input,
 select {
-    width: 329px;
-    height: 40px;
-    padding-left: 5px;
-    background-color: #D9D9D9;
+  width: 329px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: #d9d9d9;
 }
 
 section.criar_Torneio form .torneio_form select {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-section.criar_Torneio form .torneio_form input[type=submit] {
-    width: 130px;
-    height: 40px;
-    padding-left: 5px;
-    background-color: #B0BEC5;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
+section.criar_Torneio form .torneio_form input[type="submit"] {
+  width: 130px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: #b0bec5;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 section.criar_Torneio form .torneio_form .torneio_buttons {
-    display: flex;
+  display: flex;
 }
 
 section.criar_Torneio form .torneio_form .torneio_buttons .jogador {
-    background-color: #D9D9D9;
-    padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    font-size: 15px;
+  background-color: #d9d9d9;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 section.criar_Torneio form .torneio_form .torneio_buttons .jogador:hover {
-    background-color: #a4a4a4;
+  background-color: #a4a4a4;
 }
 
 section.criar_Torneio form .torneio_form .torneio_buttons .equipe {
-    background-color: #D9D9D9;
-    font-size: 15px;
-    padding: 10px;
-    cursor: pointer;
+  background-color: #d9d9d9;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 section.criar_Torneio form .torneio_form .torneio_buttons .equipe:hover {
-    background-color: #a4a4a4;
+  background-color: #a4a4a4;
 }
 
 section.criar_Torneio form .torneio_form .torneio_mode_imgs {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 section.criar_Torneio form .torneio_form .torneio_mode_imgs .mode_imgs {
-    width: 140px;
-    height: 180px;
-    margin: 10px;
-    cursor: pointer;
+  width: 140px;
+  height: 180px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 section.criar_Torneio form .torneio_form .torneio_mode_imgs .mode_imgs img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-section.criar_Torneio form .torneio_form .torneio_mode_imgs .mode_imgs img:hover {
-    transform: scale(1.1);
+section.criar_Torneio
+  form
+  .torneio_form
+  .torneio_mode_imgs
+  .mode_imgs
+  img:hover {
+  transform: scale(1.1);
 }
 
 /*Aqui termina a seção de criar torneios*/
 
 /*Inicio do perfil do usuario*/
 .body_profile {
-    min-height: 100vh;
+  min-height: 100vh;
 }
-p{
-    color: white;
+p {
+  color: white;
 }
 
 .titulo_window_body_profile {
-    color: white;
-    font-size: 1rem;
-    height: 8vh;
-    margin-bottom: 1.5vh;
-
+  color: white;
+  font-size: 1rem;
+  height: 8vh;
+  margin-bottom: 1.5vh;
 }
 
 .titulo_window_body_profile p {
-    color: white;
-    font-size: 2.5rem;
-    margin-left: 20vw;
-
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 20vw;
 }
 
 .window_body_profile {
-    display: flex;
-    flex-direction: row;
-    background-color: #1E2033;
-    width: 60vw;
-    height: 70vh;
-    margin-left: 20vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #1e2033;
+  width: 60vw;
+  height: 70vh;
+  margin-left: 20vw;
 }
 
-
 .column-left_window_body_profile {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
 }
 
 #user_column-left_window_body_profile {
-    width: 15vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding: 10%;
+  width: 15vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding: 10%;
 
-    background-color: #252D44;
-    margin-left: 5vw;
-    margin-top: 1vh;
+  background-color: #252d44;
+  margin-left: 5vw;
+  margin-top: 1vh;
 
-    height: 20vh;
-    text-align: center;
-
+  height: 20vh;
+  text-align: center;
 }
 
 #username_profile_column-left_window_body_profile {
-    height: 10vh;
-    background-color: #252D44;
-    margin-left: 5vw;
-    margin-bottom: 1vh;
-    text-align: center;
+  height: 10vh;
+  background-color: #252d44;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+  text-align: center;
 }
 
 #jogos_column-left_window_body_profile {
-    display: flex;
-    flex-direction: row;
-    width: 15vw;
-    height: 10vh;
-    background-color: #252D44;
-    margin-left: 5vw;
-    margin-bottom: 1vh;
-    text-align: center;
-
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+  height: 10vh;
+  background-color: #252d44;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+  text-align: center;
 }
 
 .icon_jogos_column-left_window_body_profile {
-    width: 5vw;
-    max-height: 10vh;
-
+  width: 5vw;
+  max-height: 10vh;
 }
-
 
 #img_logo-lol_column-left_window_body_profile {
-    height: 8vh;
-    margin: 1vh;
+  height: 8vh;
+  margin: 1vh;
 }
-
 
 #info_column-left_window_body_profile {
-    width: 15vw;
-    height: 20vh;
+  width: 15vw;
+  height: 20vh;
 
-    padding-left: 1vw;
-    padding-right: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 
-    margin-left: 5vw;
-    margin-bottom: 1vh;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
 
-    background-color: #252D44;
-    text-align: center;
-
+  background-color: #252d44;
+  text-align: center;
 }
 
-
 .column-right_window_body_profile {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
 }
 
 #top_column-right_window_body_profile {
-    display: flex;
-    height: 30vh;
+  display: flex;
+  height: 30vh;
 }
 
 #img_rank_profile {
-    width: 10vw;
-    height: 18vh;
-    margin-left: 0.5vw;
-    background-color: #252D44;
-    text-align: center;
-    padding-top: 3vh;
-    margin-top: 1vh;
+  width: 10vw;
+  height: 18vh;
+  margin-left: 0.5vw;
+  background-color: #252d44;
+  text-align: center;
+  padding-top: 3vh;
+  margin-top: 1vh;
 }
 
 #titulo_rank_profile {
-    margin-left: 0.7vw;
-    margin-top: 1vh;
-    text-align: center;
+  margin-left: 0.7vw;
+  margin-top: 1vh;
+  text-align: center;
 }
 
 #button-settings_profile {
-    margin-top: 1vh;
-    margin-left: 27vw;
+  margin-top: 1vh;
+  margin-left: 27vw;
 }
 
-
-
 #mid_column-right_window_body_profile {
-    display: flex;
-    height: 10vh;
-    width: 40vw;
-    text-align: center;
-    padding-top: 6%;
-
-
+  display: flex;
+  height: 10vh;
+  width: 40vw;
+  text-align: center;
+  padding-top: 6%;
 }
 
 #titulo_times_column-right_window_body_profile {
-    margin-left: 15vw;
+  margin-left: 15vw;
 }
 
 #titulo_historico_column-right_window_body_profile {
-    margin-left: 9.5vw;
+  margin-left: 9.5vw;
 }
 
 #bot_column-right_window_body_profile {
-    height: 30vh;
-    display: flex;
-
+  height: 30vh;
+  display: flex;
 }
 
 #div_times_column-right_window_body_profile {
-    width: 12vw;
-    text-align: center;
-    margin-left: 10vw;
+  width: 12vw;
+  text-align: center;
+  margin-left: 10vw;
 }
 
 #div_historico_column-right_window_body_profile {
-    width: 12vw;
-    text-align: center;
-    margin-left: 1vw;
+  width: 12vw;
+  text-align: center;
+  margin-left: 1vw;
 }
 
 /*Fim do perfil do usuario*/
+
+/*Iniciando media query*/
+@media (max-width: 1000px) {
+}

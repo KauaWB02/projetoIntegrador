@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <title>E-vents | Registra-se</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="../assets/images/logo.png">
-  <title>Registra-se</title>
-  <link rel="stylesheet" href="../assets/style/style.css" />
-</head>
-
-<body>
-  <section class="register">
-    <h1>Crie sua conta</h1>
-    <div class="register_form">
-      <div class="register_form_group">
-        <label for="name">Nome de Usuário:</label>
-        <input type="text" name="name" id="name">
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
       </div>
-      <div class="register_form_group">
-        <label for="password">Senha:</label>
-        <input type="password" name="password" id="password">
-      </div>
-      <div class="register_form_group">
-        <label for="password2">Digite a senha novamente:</label>
-        <input type="password" name="password2" id="password2">
-      </div>
-      <div class="register_form_group">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
-      </div>
-      <div class="register_form_group">
-        <input class="left" type="checkbox" name="termos_uso" id="termos_uso">
-        <label class="right" for="termos_uso">  Eu li e concordo com o <a href="">Termos de uso.</a></label>
+      <nav class="left">
+        <ul>
+          <li><a href="#">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contate-nos</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <div class="button_login right">
+        <a href="pages/login.html">Login</a>
       </div>
       <div class="clear"></div>
-      <div class="register_form_group">
-        <input type="button" name="submit" id="submit" value="Cadastrar">
+    </header>
+    <section class="register">
+      <h1>Crie sua conta</h1>
+      <div class="register_form">
+        <div class="register_form_group">
+          <label for="name">Nome de Usuário:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="register_form_group">
+          <label for="password">Senha:</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="register_form_group">
+          <label for="password2">Digite a senha novamente:</label>
+          <input type="password" name="password2" id="password2" />
+        </div>
+        <div class="register_form_group">
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="register_form_group">
+          <input
+            class="left"
+            type="checkbox"
+            name="termos_uso"
+            id="termos_uso"
+          />
+          <label class="right" for="termos_uso">
+            Eu li e concordo com o <a href="">Termos de uso.</a></label
+          >
+        </div>
+        <div class="clear"></div>
+        <div class="register_form_group">
+          <input type="button" name="submit" id="submit" value="Cadastrar" />
+        </div>
       </div>
-      </form>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
