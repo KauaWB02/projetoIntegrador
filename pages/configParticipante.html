@@ -6,15 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Vents | Configuração de Participante</title>
-    <link rel="stylesheet" href="../assets/style/configParticipante.css" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
     <link rel="shortcut icon" href="../assets/images/logo.png" />
     <script
       src="https://kit.fontawesome.com/2593a2acd8.js"
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+        <ul>
+          <li><a href="/">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+        <ul>
+          <li><a href="#">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="config">
       <div class="config_box">
         <div class="config_box_check">
@@ -60,18 +86,30 @@
           </div>
         </div>
         <div class="config_box_check">
-          <div class="title">Participante</div>
           <div class="participantes">
-            <div class="buttons">
-              <button value="jogador">Jogador</button>
-            </div>
-            <div class="buttons">
-              <button value="equipe">Equipe</button>
+            <div class="title">Participante</div>
+            <div class="box_buttons">
+              <div class="buttons">
+                <button value="jogador">Jogador</button>
+              </div>
+              <div class="buttons">
+                <button value="equipe">Equipe</button>
+              </div>
             </div>
           </div>
           <div class="participantes">
-            <div class="title">Número mínimo de jogadores por equipe</div>
+            <div class="title_parti">Número mínimo de jogadores por equipe</div>
+            <div class="input_quanti_parti">
+              <input type="number" name="number" id="number" />
+            </div>
           </div>
+          <div class="participantes">
+            <div class="title_parti">Número máximo de jogadores por equipe</div>
+            <div class="input_quanti_parti">
+              <input type="number" name="number" id="number" />
+            </div>
+          </div>
+          <input type="submit" value="Atualizar" />
         </div>
       </div>
     </section>
