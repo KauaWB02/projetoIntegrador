@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <title>E-Vents | Pergunta</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../assets/images/logo.png">
-  <title>E-vents | Pergunta</title>
-  <link rel="stylesheet" href="../assets/style/style.css">
-</head>
-
-<body>
-  <div class="pergunta_title">
-    <h1>O que deseja com nossos serviços?</h1>
-  </div>
-  <section class="perguntatela">
-    <div class="box_tela" onclick="jogadorFunction()">
-      <h3>EU QUERO A GLÓRIA!</h3>
-      <a href="#">
-        <img src="../assets/images/game.png" alt="controle">
-      </a>
-      <p>Seja um jogador, forme uma equipe e participe de torneios emocionantes e com grandes recompensas</p>
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+        <ul>
+          <li><a href="/">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+        <ul>
+          <li><a href="#">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="box_tela" onclick="colaboradorFunction()">
-      <h3>EU QUERO DISCÓRDIA!</h3>
-      <a href="#">
-        <img src="../assets/images/trophy.png" alt="trofeu" id="img">
-      </a>
-      <p>Seja o responsável pela inscrições dos jogadores e pelas grandes de batalhas</p>
+    <div class="pergunta_title">
+      <h1>O que deseja com nossos serviços?</h1>
     </div>
-  </section>
-</body>
-
+    <section class="perguntatela">
+      <div class="box_tela" onclick="jogadorFunction()">
+        <h3>EU QUERO A GLÓRIA!</h3>
+        <a href="#">
+          <img src="../assets/images/game.png" alt="controle" />
+        </a>
+        <p>
+          Seja um jogador, forme uma equipe e participe de torneios emocionantes
+          e com grandes recompensas
+        </p>
+      </div>
+      <div class="box_tela" onclick="colaboradorFunction()">
+        <h3>EU QUERO DISCÓRDIA!</h3>
+        <a href="#">
+          <img src="../assets/images/trophy.png" alt="trofeu" id="img" />
+        </a>
+        <p>
+          Seja o responsável pela inscrições dos jogadores e pelas grandes
+          batalhas
+        </p>
+      </div>
+    </section>
+    <script src="../javaScript/index.js"></script>
+  </body>
 </html>
