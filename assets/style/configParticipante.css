@@ -57,26 +57,36 @@ div.config{
 div.texto1{
     display: flex;
 }
-#text-left{
+#text-left1{
     margin-left: 2vw;
 }
-#text-right{
+#text-right1{
     margin-left: 17vw;
 }
+
+/*Início: primeira fila de opcções*/
+
 div.primeira_fileira{
     display: flex;
     margin-left: 2vw;
+    color: black;
+}
+div.primeira_fileira a{
+    text-decoration: none;
+}
+div.primeira_fileira :hover{
+    background-color: #adabab;
 }
 div.participante{
     background-color: #D9D9D9;
-    height: 43px;
+    height: 33px;
     width: 164px;
     text-align: center;
     color: black;
 }
 div.organizador{
     background-color: #D9D9D9;
-    height: 43px;
+    height: 33px;
     width: 164px;
     margin-left: 1vw;
     text-align: center;
@@ -84,7 +94,7 @@ div.organizador{
 }
 div.nenhum{
     background-color: #D9D9D9;
-    height: 43px;
+    height: 33px;
     width: 164px;
     margin-left: 1vw;
     text-align: center;
@@ -92,20 +102,103 @@ div.nenhum{
 }
 div.jogadores{
     background-color: #D9D9D9;
-    height: 43px;
+    height: 33px;
     width: 164px;
-    margin-left: 4vw;
+    margin-left: 5vw;
     text-align: center;
     color: black;
 }
 div.equipes{
     background-color: #D9D9D9;
-    height: 43px;
+    height: 33px;
     width: 164px;
     margin-left: 1vw;
     text-align: center;
     color: black;
 }
+
+/*Fim: primeira fila de opcções*/
+
+/*Inicio: segunda fila de opções*/
+
+div.texto2{
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 6vh;
+}
+#text-right2{
+    margin-left: 23.1vw;
+    margin-top: 3.1vh;
+    font-size: 20px;
+}
 div.segunda_fileira{
     display: flex;
+    margin-left: 2vw;
 }
+#data1{
+    height: 25px;
+    width: 18vw;
+    margin-bottom: 2vh;
+    background-color: #D9D9D9;
+}
+#hora1{
+    margin-left: 1vw;
+    height: 25px;
+    width: 7vw;
+    background-color: #D9D9D9;
+}
+#numero1{
+    margin-left: 5.7vw;
+    height: 25px;
+    width: 7vw;
+    background-color: #D9D9D9;
+}
+
+/*Fim: segunda fila de opções*/
+
+/*Inicio: terceira fila de opções*/
+
+div.texto3{
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+div.terceira_fileira{
+    display: flex;
+    margin-left: 2vw;
+}
+#text-right3{
+    margin-left: 21.4vw;
+    margin-top: 3.1vh;
+    font-size: 20px;
+}
+#data2{
+    height: 25px;
+    width: 18vw;
+    margin-bottom: 2vh;
+    background-color: #D9D9D9;
+}
+#hora2{
+    margin-left: 1vw;
+    height: 25px;
+    width: 7vw;
+    background-color: #D9D9D9;
+}
+#numero2{
+    margin-left: 5.7vw;
+    height: 25px;
+    width: 7vw;
+    background-color: #D9D9D9;
+}
+/*Fim: terceira fila de opcções*/
+
+div.atualizar{
+    background-color: #F1AE00;
+    height: 33px;
+    width: 164px;
+    margin-left: 47vw;
+    margin-top: 8vh;
+    text-align: center;
+    color: black;
+}
+
