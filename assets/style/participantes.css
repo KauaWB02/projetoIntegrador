@@ -14,13 +14,11 @@ body{
    background-color: white;
    padding-right: 10%;
    padding-left: 10%;
-   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.438);
-   
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.438); 
 }
 .number{
     font-size: 70px;
 }
-
 .lista_participantes{
     height: 400px;
     width: 60%;
@@ -33,4 +31,51 @@ body{
 .java{
     color: black;
     font-size: 25px;
+}
+#trofeu{
+    height: 5vh;
+}
+#seta{
+    cursor: pointer;
+}
+p{
+    margin-right: 4vw;
+    margin-left: 2vw;
+    color: black;  
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4285F4;
+    width: 15vw;
+    border-radius: 8px;
+    margin-left: 22vw;
+}
+.botao{
+    display: flex;
+    margin-left: 59vw;
+    margin-top: 1vh;
+}
+.adicionar{
+    color:white;
+    background-color: #43CB13;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 8vw;
+    
+}
+.preencher{
+    color: white;
+    background-color: #4285F4;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    margin-left: 1vw;
+    cursor: pointer;
+    font-size: 15px;
+    width: 10vw;
 }
