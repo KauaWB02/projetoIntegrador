@@ -34,10 +34,10 @@ section.list_torneio .box {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.list_torneio .box .box_list {
-  width: 24%;
   margin: 5px;
   border-radius: 5px;
   display: flex;
@@ -149,3 +149,4 @@ section.list_torneio .box .box_list .premios .posicao .lugar {
   font-size: 15px;
   color: white;
 }
+/*Fim da pagina de listagem de torneio*/

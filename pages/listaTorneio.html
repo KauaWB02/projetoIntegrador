@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,294 +9,351 @@
       crossorigin="anonymous"
     ></script>
     <link rel="shortcut icon" href="../assets/images/logo.png" />
-    <link rel="stylesheet" href="../assets/style/listaTorneio.css" />
-    <title>E-Vents</title>
-</head>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <title>E-Vents | Lista de torneio</title>
+  </head>
 
-<body>
-
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+         <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+         <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="list_torneio">
-        <div class="container">
-            <div class="box">
-                <div class="box_list">
-                    <div class="img">
-                        <img src="../assets/images/torneio_img/league.jpg" alt="">
-                    </div>
-                    <div class="title">
-                        <div class="name_title">Evento E-vents</div>
-                        <div class="date">26/04/2023 14:30 horário de brasilia</div>
-                    </div>
-                    <div class="description">
-                        <div class="description_mode">
-                            <div class="description_title">Modo</div>
-                            <div class="description_name">Aram</div>
-                        </div>
-                        <div class="description_chave">
-                            <div class="description_title">Chavemanto</div>
-                            <div class="description_name">100 Equipes 1x1 ate o final.</div>
-                        </div>
-                    </div>
-                    <div class="button_entrar">
-                        <button  onclick="premioFunction()">Participar do torneio</button>
-                    </div>
-                    <div class="premios">
-                        <button>
-                            <p>Ver prêmios</p>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </button>
-                        <div class="lugares">
-                            <div class="posicao">
-                                <div class="lugar left">1º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">2º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">3º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">4º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">5º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_list">
-                    <div class="img">
-                        <img src="../assets/images/torneio_img/league.jpg" alt="">
-                    </div>
-                    <div class="title">
-                        <div class="name_title">Evento E-vents</div>
-                        <div class="date">26/04/2023 14:30 horário de brasilia</div>
-                    </div>
-                    <div class="description">
-                        <div class="description_mode">
-                            <div class="description_title">Modo</div>
-                            <div class="description_name">Aram</div>
-                        </div>
-                        <div class="description_chave">
-                            <div class="description_title">Chavemanto</div>
-                            <div class="description_name">100 Equipes 1x1 ate o final.</div>
-                        </div>
-                    </div>
-                    <div class="button_entrar">
-                        <button  onclick="premioFunction()">Participar do torneio</button>
-                    </div>
-                    <div class="premios">
-                        <button>
-                            <p>Ver prêmios</p>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </button>
-                        <div class="lugares">
-                            <div class="posicao">
-                                <div class="lugar left">1º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">2º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">3º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">4º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">5º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_list">
-                    <div class="img">
-                        <img src="../assets/images/torneio_img/league.jpg" alt="">
-                    </div>
-                    <div class="title">
-                        <div class="name_title">Evento E-vents</div>
-                        <div class="date">26/04/2023 14:30 horário de brasilia</div>
-                    </div>
-                    <div class="description">
-                        <div class="description_mode">
-                            <div class="description_title">Modo</div>
-                            <div class="description_name">Aram</div>
-                        </div>
-                        <div class="description_chave">
-                            <div class="description_title">Chavemanto</div>
-                            <div class="description_name">100 Equipes 1x1 ate o final.</div>
-                        </div>
-                    </div>
-                    <div class="button_entrar">
-                        <button  onclick="premioFunction()">Participar do torneio</button>
-                    </div>
-                    <div class="premios">
-                        <button>
-                            <p>Ver prêmios</p>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </button>
-                        <div class="lugares">
-                            <div class="posicao">
-                                <div class="lugar left">1º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">2º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">3º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">4º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">5º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_list">
-                    <div class="img">
-                        <img src="../assets/images/torneio_img/league.jpg" alt="">
-                    </div>
-                    <div class="title">
-                        <div class="name_title">Evento E-vents</div>
-                        <div class="date">26/04/2023 14:30 horário de brasilia</div>
-                    </div>
-                    <div class="description">
-                        <div class="description_mode">
-                            <div class="description_title">Modo</div>
-                            <div class="description_name">Aram</div>
-                        </div>
-                        <div class="description_chave">
-                            <div class="description_title">Chavemanto</div>
-                            <div class="description_name">100 Equipes 1x1 ate o final.</div>
-                        </div>
-                    </div>
-                    <div class="button_entrar">
-                        <button  onclick="premioFunction()">Participar do torneio</button>
-                    </div>
-                    <div class="premios">
-                        <button>
-                            <p>Ver prêmios</p>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </button>
-                        <div class="lugares">
-                            <div class="posicao">
-                                <div class="lugar left">1º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">2º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">3º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">4º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">5º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_list">
-                    <div class="img">
-                        <img src="../assets/images/torneio_img/league.jpg" alt="">
-                    </div>
-                    <div class="title">
-                        <div class="name_title">Evento E-vents</div>
-                        <div class="date">26/04/2023 14:30 horário de brasilia</div>
-                    </div>
-                    <div class="description">
-                        <div class="description_mode">
-                            <div class="description_title">Modo</div>
-                            <div class="description_name">Aram</div>
-                        </div>
-                        <div class="description_chave">
-                            <div class="description_title">Chavemanto</div>
-                            <div class="description_name">100 Equipes 1x1 ate o final.</div>
-                        </div>
-                    </div>
-                    <div class="button_entrar">
-                        <button  onclick="premioFunction()">Participar do torneio</button>
-                    </div>
-                    <div class="premios">
-                        <button>
-                            <p>Ver prêmios</p>
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </button>
-                        <div class="lugares">
-                            <div class="posicao">
-                                <div class="lugar left">1º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">2º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">3º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">4º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="posicao">
-                                <div class="lugar left">5º Lugar</div>
-                                <p class="right">$5</p>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="box">
+          <div class="box_list">
+            <div class="img">
+              <img src="../assets/images/torneio_img/league.jpg" alt="" />
             </div>
+            <div class="title">
+              <div class="name_title">Evento E-vents</div>
+              <div class="date">26/04/2023 14:30 horário de brasilia</div>
+            </div>
+            <div class="description">
+              <div class="description_mode">
+                <div class="description_title">Modo</div>
+                <div class="description_name">Aram</div>
+              </div>
+              <div class="description_chave">
+                <div class="description_title">Chavemanto</div>
+                <div class="description_name">100 Equipes 1x1 ate o final.</div>
+              </div>
+            </div>
+            <div class="button_entrar">
+              <button onclick="premioFunction()">Participar do torneio</button>
+            </div>
+            <div class="premios">
+              <button>
+                <p>Ver prêmios</p>
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+              <div class="lugares">
+                <div class="posicao">
+                  <div class="lugar left">1º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">2º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">3º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">4º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">5º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box_list">
+            <div class="img">
+              <img src="../assets/images/torneio_img/league.jpg" alt="" />
+            </div>
+            <div class="title">
+              <div class="name_title">Evento E-vents</div>
+              <div class="date">26/04/2023 14:30 horário de brasilia</div>
+            </div>
+            <div class="description">
+              <div class="description_mode">
+                <div class="description_title">Modo</div>
+                <div class="description_name">Aram</div>
+              </div>
+              <div class="description_chave">
+                <div class="description_title">Chavemanto</div>
+                <div class="description_name">100 Equipes 1x1 ate o final.</div>
+              </div>
+            </div>
+            <div class="button_entrar">
+              <button onclick="premioFunction()">Participar do torneio</button>
+            </div>
+            <div class="premios">
+              <button>
+                <p>Ver prêmios</p>
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+              <div class="lugares">
+                <div class="posicao">
+                  <div class="lugar left">1º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">2º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">3º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">4º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">5º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box_list">
+            <div class="img">
+              <img src="../assets/images/torneio_img/league.jpg" alt="" />
+            </div>
+            <div class="title">
+              <div class="name_title">Evento E-vents</div>
+              <div class="date">26/04/2023 14:30 horário de brasilia</div>
+            </div>
+            <div class="description">
+              <div class="description_mode">
+                <div class="description_title">Modo</div>
+                <div class="description_name">Aram</div>
+              </div>
+              <div class="description_chave">
+                <div class="description_title">Chavemanto</div>
+                <div class="description_name">100 Equipes 1x1 ate o final.</div>
+              </div>
+            </div>
+            <div class="button_entrar">
+              <button onclick="premioFunction()">Participar do torneio</button>
+            </div>
+            <div class="premios">
+              <button>
+                <p>Ver prêmios</p>
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+              <div class="lugares">
+                <div class="posicao">
+                  <div class="lugar left">1º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">2º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">3º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">4º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">5º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box_list">
+            <div class="img">
+              <img src="../assets/images/torneio_img/league.jpg" alt="" />
+            </div>
+            <div class="title">
+              <div class="name_title">Evento E-vents</div>
+              <div class="date">26/04/2023 14:30 horário de brasilia</div>
+            </div>
+            <div class="description">
+              <div class="description_mode">
+                <div class="description_title">Modo</div>
+                <div class="description_name">Aram</div>
+              </div>
+              <div class="description_chave">
+                <div class="description_title">Chavemanto</div>
+                <div class="description_name">100 Equipes 1x1 ate o final.</div>
+              </div>
+            </div>
+            <div class="button_entrar">
+              <button onclick="premioFunction()">Participar do torneio</button>
+            </div>
+            <div class="premios">
+              <button>
+                <p>Ver prêmios</p>
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+              <div class="lugares">
+                <div class="posicao">
+                  <div class="lugar left">1º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">2º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">3º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">4º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">5º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box_list">
+            <div class="img">
+              <img src="../assets/images/torneio_img/league.jpg" alt="" />
+            </div>
+            <div class="title">
+              <div class="name_title">Evento E-vents</div>
+              <div class="date">26/04/2023 14:30 horário de brasilia</div>
+            </div>
+            <div class="description">
+              <div class="description_mode">
+                <div class="description_title">Modo</div>
+                <div class="description_name">Aram</div>
+              </div>
+              <div class="description_chave">
+                <div class="description_title">Chavemanto</div>
+                <div class="description_name">100 Equipes 1x1 ate o final.</div>
+              </div>
+            </div>
+            <div class="button_entrar">
+              <button onclick="premioFunction()">Participar do torneio</button>
+            </div>
+            <div class="premios">
+              <button>
+                <p>Ver prêmios</p>
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+              <div class="lugares">
+                <div class="posicao">
+                  <div class="lugar left">1º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">2º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">3º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">4º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+                <div class="posicao">
+                  <div class="lugar left">5º Lugar</div>
+                  <p class="right">$5</p>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <script src="../javaScript/listaTorneio.js"></script>
-</body>
+		<section class="sec6" id="contate_nos">
+      <div class="complemento">
+        <div class="title_sec6">Saiba mais</div>
+        <div class="conteudo_box">
+          <h3>Sobre</h3>
+          <h3>Serviços</h3>
+          <h3>Termos</h3>
+          <h3>Equipe</h3>
+        </div>
+      </div>
 
+      <div class="complemento">
+        <div class="title_sec6">Suporte</div>
+        <div class="conteudo_box">
+          <h3>Central de Ajuda</h3>
+          <h3>Mande-nos uma Mensagem</h3>
+          <h3>Informação</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Contato</div>
+        <div class="conteudo_box">
+          <i id="margin_icon" class="fa-brands fa-google"></i>
+          <i id="margin_icon" class="fa-brands fa-facebook"></i>
+          <i id="margin_icon" class="fa-brands fa-twitter"></i>
+          <i id="margin_icon" class="fa-brands fa-instagram"></i>
+          <i id="margin_icon" class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+		<script src="../javaScript/index.js"></script>
+    <script src="../javaScript/listaTorneio.js"></script>
+  </body>
 </html>
