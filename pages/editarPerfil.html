@@ -20,14 +20,27 @@
       </div>
       <nav class="left">
         <ul>
-          <li><a href="../index.html">Ínicio</a></li>
-          <li><a href="torneio.html">Torneios</a></li>
-          <li><a href="../index.html#contate_nos">Contate-nos</a></li>
-          <li><a href="../index.html#sobre_nos">Sobre nós</a></li>
+          <li><a href="/">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
         </ul>
       </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
       <div class="clear"></div>
     </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+        <ul>
+          <li><a href="#">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="profile">
       <div class="profile_box">
         <div class="title">
@@ -41,7 +54,7 @@
           <div class="clear"></div>
         </div>
         <form class="left" action="">
-          <div class="profile_form_position left">
+          <div class="profile_form_position">
             <div class="profile_form">
               <label for="name">Nome:</label>
               <input type="text" name="name" id="name" />
@@ -59,7 +72,7 @@
               <input type="password" name="password" id="password" />
             </div>
           </div>
-          <div class="profile_form_position right">
+          <div class="profile_form_position">
             <div class="profile_form">
               <label for="game">Jogo Principal:</label>
               <select name="game" id="game">
@@ -75,7 +88,7 @@
               <textarea name="biografia" id="biografia"></textarea>
             </div>
             <div class="profile_form">
-              <button><i class="fa-solid fa-check"></i>Salvar</button>
+              <button><i class="fa-solid fa-check"></i> Salvar</button>
             </div>
           </div>
           <div class="clear"></div>
@@ -83,5 +96,6 @@
         <div class="clear"></div>
       </div>
     </section>
+    <script src="../javaScript/index.js"></script>
   </body>
 </html>

@@ -1,151 +1,118 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
-<head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Vents | Configuração de Participante</title>
-    <link rel="stylesheet" href="../assets/style/configParticipante.css">
+    <link rel="stylesheet" href="../assets/style/style.css" />
     <link rel="shortcut icon" href="../assets/images/logo.png" />
-    <script src ="https://kit.fontawesome.com/2593a2acd8.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-
-    <header class ="cabeçalho">
-
-        <img id="logo" src="../assets/images/logoheader.jpeg">
-
-        <div class = "opc">
-
-            <h2>Ínicio</h2>
-            <h2>Jogos</h2>
-            <h2>Contate-nos</h2>
-            <h2>Sobre nós</h2>
-
-        </div>
-
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+        <ul>
+          <li><a href="/">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
     </header>
-
-    <section class="seção">
-
-        <h2>Configuração de Participante</h2>
-
-       <div class="config">
-
-            <div class="texto1">
-
-                <p id="text-left1">Habilitar check-in de torneio?</p>
-                <p id="text-right1">Participantes</p>
-
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+        <ul>
+          <li><a href="#">Ínicio</a></li>
+          <li><a href="pages/torneio.html">Torneios</a></li>
+          <li><a href="#contate_nos">Contato</a></li>
+          <li><a href="#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="config">
+      <div class="config_box">
+        <div class="config_box_check">
+          <div class="habilitar_check">
+            <div class="title">Habilitar check-in no torneio?</div>
+            <div class="check_option">
+              <div class="box_option">
+                <button value="jogador">Jogador</button>
+              </div>
+              <div class="box_option">
+                <button value="organizador">Organizador</button>
+              </div>
+              <div class="box_option">
+                <button value="nenhum">Nenhum</button>
+              </div>
             </div>
-
-            <div class="primeira_fileira">
-
-                <div class="participante">
-
-                    <a href="#">Participante</a>
-
+          </div>
+          <div class="habilitar_check">
+            <div class="box_check">
+              <div class="title_check">Início do check-in</div>
+              <div class="box_date_check">
+                <div class="input_date">
+                  <input type="date" name="date" id="date" />
                 </div>
-
-                <div class="organizador">
-
-                    <a href="#">Organizador</a>
-
+                <div class="input_time">
+                  <input type="time" name="time" id="time" />
                 </div>
-
-                <div class="nenhum">
-
-                    <a href="#">Nenhum</a>
-
-                </div>
-
-                <div class="jogadores">
-
-                    <a href="#">Jogadores</a>
-
-                </div>
-
-                <div class="equipes">
-
-                    <a href="#">Equipes</a>
-
-                </div>
-
-            </div>      
-
-            <div class="texto2">
-
-                <p>Início do check-in</p>
-                <p id="text-right2">Número mínimo de jogadores por equipe</p>
-
+              </div>
             </div>
-
-            <div class="segunda_fileira">
-
-                <div class="data1">
-
-                    <input type="date" value="00-00-0000" id="data1" />
-                    
+          </div>
+          <div class="habilitar_check">
+            <div class="box_check">
+              <div class="title_check">Fim do check-in</div>
+              <div class="box_date_check">
+                <div class="input_date">
+                  <input type="date" name="date" id="date" />
                 </div>
-                
-                <div class="hora1">
-
-                   <input type="time" value="00:00" id="hora1" />
-
+                <div class="input_time">
+                  <input type="time" name="time" id="time" />
                 </div>
-
-                <div class="numero1">
-
-                    <input type="number" value="1" min="2" max="8" id="numero1" />
-
-                </div>
-
+              </div>
             </div>
-
-            <div class="texto3">
-
-                <p>Término do check-in</p>
-                <p id="text-right3">Número máximo de jogadores por equipe</p>
-
+          </div>
+        </div>
+        <div class="config_box_check">
+          <div class="participantes">
+            <div class="title">Participante</div>
+            <div class="box_buttons">
+              <div class="buttons">
+                <button value="jogador">Jogador</button>
+              </div>
+              <div class="buttons">
+                <button value="equipe">Equipe</button>
+              </div>
             </div>
-
-            <div class="terceira_fileira">
-
-                <div class="data2">
-
-                    <input type="date" value="00-00-0000" id="data1" />
-
-                </div>
-                
-                <div class="hora2">
-
-                   <input type="time" value="00:00" id="hora1" />
-
-                </div>
-
-                <div class="numero2">
-
-                    <input type="number" value="8" min="2" max="8" id="numero1" />
-
-                </div>
-
+          </div>
+          <div class="participantes">
+            <div class="title_parti">Número mínimo de jogadores por equipe</div>
+            <div class="input_quanti_parti">
+              <input type="number" name="number" id="number" />
             </div>
-
-             <div class="atualizar">
-
-                <a><b>Atualizar</b></a>
-        
+          </div>
+          <div class="participantes">
+            <div class="title_parti">Número máximo de jogadores por equipe</div>
+            <div class="input_quanti_parti">
+              <input type="number" name="number" id="number" />
             </div>
-
-       </div>
-
+          </div>
+          <input type="submit" value="Atualizar" />
+        </div>
+      </div>
     </section>
-    
-</body>
-
+    <script src="../javaScript/index.js"></script>
+  </body>
 </html>
