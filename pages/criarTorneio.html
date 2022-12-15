@@ -19,15 +19,28 @@
         <img src="../assets/images/logoheader.jpeg" alt="" />
       </div>
       <nav class="left">
-        <ul>
-          <li><a href="#">Ínicio</a></li>
-          <li><a href="pages/torneio.html">Torneios</a></li>
-          <li><a href="../index.html#contate_nos">Contate-nos</a></li>
-          <li><a href="../index.html#sobre_nos">Sobre nós</a></li>
+         <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
         </ul>
       </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
       <div class="clear"></div>
     </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+         <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="criar_Torneio">
       <div class="title">
         <h1>Criar novo torneio</h1>
@@ -41,7 +54,7 @@
         </div>
         <div class="torneio_form">
           <div class="torneio_label">
-            <label for="name">Modalidade:</label>
+            <label for="mode">Modalidade:</label>
           </div>
           <div class="torneio_mode_imgs">
             <div class="mode_imgs" mode="brawl_stars">
@@ -63,7 +76,7 @@
               <img src="../assets/images/torneio_img/wildRift.jpg" alt="" />
             </div>
           </div>
-          <select name="mode" id="mode">
+          <select name="mode" id="select">
             <option value="1">League of Legends</option>
             <option value="2">Cs-Go</option>
             <option value="3">Brawl Stars</option>
@@ -102,5 +115,37 @@
         </div>
       </form>
     </section>
+    <section class="sec6" id="contate_nos">
+      <div class="complemento">
+        <div class="title_sec6">Saiba mais</div>
+        <div class="conteudo_box">
+          <h3>Sobre</h3>
+          <h3>Serviços</h3>
+          <h3>Termos</h3>
+          <h3>Equipe</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Suporte</div>
+        <div class="conteudo_box">
+          <h3>Central de Ajuda</h3>
+          <h3>Mande-nos uma Mensagem</h3>
+          <h3>Informação</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Contato</div>
+        <div class="conteudo_box">
+          <i id="margin_icon" class="fa-brands fa-google"></i>
+          <i id="margin_icon" class="fa-brands fa-facebook"></i>
+          <i id="margin_icon" class="fa-brands fa-twitter"></i>
+          <i id="margin_icon" class="fa-brands fa-instagram"></i>
+          <i id="margin_icon" class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+    <script src="../javaScript/index.js"></script>
   </body>
 </html>

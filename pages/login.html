@@ -18,15 +18,28 @@
         <img src="../assets/images/logoheader.jpeg" alt="" />
       </div>
       <nav class="left">
-        <ul>
-          <li><a href="#">Ínicio</a></li>
-          <li><a href="torneio.html">Torneios</a></li>
-          <li><a href="../index.html#contate_nos">Contate-nos</a></li>
-          <li><a href="../index.html#sobre_nos">Sobre nós</a></li>
+          <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
         </ul>
       </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
       <div class="clear"></div>
     </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+          <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="login">
       <div class="login_group_box">
         <form action="">
@@ -48,7 +61,7 @@
               type="button"
               name="registrar"
               id="registrar"
-              value="Inscrever-se"
+              value="Criar conta" onclick="functionIrPgCadastra()"
             />
           </div>
           <div class="clear"></div>
@@ -77,5 +90,6 @@
       <!--group_box-->
     </section>
     <!--Seção login-->
+    <script src="../javaScript/index.js"></script>
   </body>
 </html>
