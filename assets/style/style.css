@@ -40,7 +40,8 @@ div.menu_mobile {
   z-index: 999;
   background-color: #1e2033;
   width: 100%;
-  display: none;
+  opacity: 0;
+  transition: 1s;
 }
 header .menu i {
   cursor: pointer;
@@ -1192,12 +1193,23 @@ section.list_torneio .box .box_list .premios .posicao .lugar {
 }
 /*Fim da pagina de listagem de torneio*/
 
-
+.show{
+  opacity: 1 !important;
+}
+.hide{
+  opacity: 0 !important;
+}
 /*Iniciando media query*/
-@media (max-width: 1201px) {
+@media (min-width: 1201px) {
+  div.menu_mobile {
+    display: none !important;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
+  div.menu_mobile {
+    display: none !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1205,6 +1217,7 @@ section.list_torneio .box .box_list .premios .posicao .lugar {
     margin-left: 100px;
     margin-top: 100px;
   }
+  
   section.config {
     margin: 0px;
     width: 100%;

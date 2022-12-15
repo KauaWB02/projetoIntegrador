@@ -6,14 +6,15 @@ function clickmenu() {
   if (menu.getAttribute('openMenu') == 1) {
     //Menu abri
     let openMenu = document.getElementById('menu_mobile');
-
-    openMenu.style.display = 'unset';
+    openMenu.classList.remove('hide');
+    openMenu.classList.add('show');
     menu.setAttribute('openMenu', 0);
+    
   } else {
     //fehcar
     let openMenu = document.getElementById('menu_mobile');
-
-    openMenu.style.display = 'none';
+    openMenu.classList.add('hide');
+    openMenu.classList.remove('show');
     menu.setAttribute('openMenu', 1);
   }
 
@@ -54,7 +55,7 @@ function functionCadastra() {
   let msg = document.getElementById('message');
   let jogador = document.getElementById('jogador');
   let colaborador = document.getElementById('colaborador');
-  if (jogador.style.display != 'none') {
+  if (jogador.style.display === 'block') {
     console.log('Entrou aqui')
     let nome = document.getElementById('name').value;
     let email = document.getElementById('email').value;
@@ -76,15 +77,15 @@ function functionCadastra() {
       Storage.setItem('funcao', 'jogador');
 
     }
-  } else if (colaborador.style.display != 'none') {
-    console.log('Entrou aqui')
+  } else if (colaborador.style.display === 'block') {
+    console.log('Entrou aqui2')
     let nome = document.getElementById('name_c').value;
     let email = document.getElementById('email_c').value;
     let senha1 = document.getElementById('password_c').value;
     let senha2 = document.getElementById('password2_c').value;
     let cnpj = document.getElementById('cnpj_c').value;
     let termos = document.getElementById('termos_uso_c');
-
+    
     if (!termos.checked) {
       msg.style.display = 'block';
       msg.innerHTML = 'Para continuar precisa aceitar os termos.';
@@ -93,12 +94,6 @@ function functionCadastra() {
         msg.style.display = 'block';
         msg.innerHTML = 'Senhas tem que ser iguais.';
       }
-      Storage.setItem('nome', nome);
-      Storage.setItem('email', email);
-      Storage.setItem('senha', senha1);
-      Storage.setItem('cnpj', cnpj);
-      Storage.setItem('termo', termos);
-      Storage.setItem('funcao', 'jogador');
       
     }
   }
