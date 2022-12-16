@@ -34,6 +34,7 @@ body{
 }
 #trofeu{
     height: 5vh;
+    margin-left: 2vw;
 }
 #seta{
     cursor: pointer;
@@ -48,9 +49,9 @@ p{
     justify-content: center;
     align-items: center;
     background-color: #4285F4;
-    width: 15vw;
+    width: 20vw;
     border-radius: 8px;
-    margin-left: 22vw;
+    margin-left: 19vw;
 }
 .botao{
     display: flex;
