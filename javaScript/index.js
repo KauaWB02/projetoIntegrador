@@ -9,7 +9,7 @@ function clickmenu() {
     openMenu.classList.remove('hide');
     openMenu.classList.add('show');
     menu.setAttribute('openMenu', 0);
-    
+
   } else {
     //fehcar
     let openMenu = document.getElementById('menu_mobile');
@@ -52,7 +52,7 @@ function functionUsuario(funcao) {
 
 function functionCadastra() {
 
-  let msg = document.getElementById('message');
+  let msg = document.querySelectorAll('#message')
   let jogador = document.getElementById('jogador');
   let colaborador = document.getElementById('colaborador');
   if (jogador.style.display === 'block') {
@@ -63,18 +63,22 @@ function functionCadastra() {
     let senha2 = document.getElementById('password2').value;
     let termos = document.getElementById('termos_uso');
     if (!termos.checked) {
-      msg.style.display = 'block';
-      msg.innerHTML = 'Para continuar precisa aceitar os termos.';
+      msg.forEach(element => {
+        element.style.display = 'block';
+        element.innerHTML = 'Para continuar precisa aceitar os termos.';
+      });
     } else {
       if (senha1 !== senha2) {
-        msg.style.display = 'block';
-        msg.innerHTML = 'Senhas tem que ser iguais.';
+        msg.forEach(element => {
+          element.style.display = 'block';
+          element.innerHTML = 'Senhas tem que ser iguais.';
+        });
       }
-      Storage.setItem('nome', nome);
-      Storage.setItem('email', email);
-      Storage.setItem('senha', senha1);
-      Storage.setItem('termo', termos);
-      Storage.setItem('funcao', 'jogador');
+      localStorage.setItem('nome', nome);
+      localStorage.setItem('email', email);
+      localStorage.setItem('senha', senha1);
+      localStorage.setItem('termo', termos);
+      localStorage.setItem('funcao', 'jogador');
     }
   } else if (colaborador.style.display === 'block') {
     console.log('Entrou aqui2')
@@ -84,17 +88,27 @@ function functionCadastra() {
     let senha2 = document.getElementById('password2_c').value;
     let cnpj = document.getElementById('cnpj_c').value;
     let termos = document.getElementById('termos_uso_c');
-    
+
+    console.log(nome);
+    console.log(termos.checked)
+
     if (!termos.checked) {
-      msg.style.display = 'block';
-      msg.innerHTML = 'Para continuar precisa aceitar os termos.';
+      msg.forEach(element => {
+        element.style.display = 'block';
+        element.innerHTML = 'Para continuar precisa aceitar os termos.';
+      });
     } else {
       if (senha1 !== senha2) {
         msg.style.display = 'block';
         msg.innerHTML = 'Senhas tem que ser iguais.';
       }
-      
+      localStorage.setItem('nome', nome);
+      localStorage.setItem('email', email);
+      localStorage.setItem('senha', senha1);
+      localStorage.setItem('cnpj', cnpj);
+      localStorage.setItem('termo', termos);
+      localStorage.setItem('funcao', 'colaborador');
     }
   }
-
 }
+

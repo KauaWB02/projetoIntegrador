@@ -42,6 +42,7 @@ div.menu_mobile {
   width: 100%;
   opacity: 0;
   transition: 1s;
+  margin-top: 7%;
 }
 header .menu i {
   cursor: pointer;
