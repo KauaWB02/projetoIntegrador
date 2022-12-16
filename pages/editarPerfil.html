@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <title>E-vents | Editar Perfil</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+         <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+         <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="profile">
+      <div class="profile_box">
+        <div class="title">
+          <h1>Editar Perfil</h1>
+        </div>
+        <div class="profile_img left">
+          <div class="img">
+            <!--<img src="../assets/images/profile_img/imgProfile2.jpg" alt="" />-->
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <form class="left" action="">
+          <div class="profile_form_position">
+            <div class="profile_form">
+              <label for="name">Nome:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="profile_form">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="profile_form">
+              <label for="phone">Telefone:</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="profile_form">
+              <label for="password">Senha:</label>
+              <input type="password" name="password" id="password" />
+            </div>
+          </div>
+          <div class="profile_form_position">
+            <div class="profile_form">
+              <label for="game">Jogo Principal:</label>
+              <select name="game" id="game">
+                <option value="1">League of Legends</option>
+                <option value="2">CS-GO</option>
+                <option value="3">Brawl Stars</option>
+                <option value="4">Fortnite</option>
+                <option value="5">Dota 2</option>
+              </select>
+            </div>
+            <div class="profile_form">
+              <label for="biografia">Biografia:</label>
+              <textarea name="biografia" id="biografia"></textarea>
+            </div>
+            <div class="profile_form">
+              <button><i class="fa-solid fa-check"></i> Salvar</button>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </form>
+        <div class="clear"></div>
+      </div>
+    </section>
+    <section class="sec6" id="contate_nos">
+      <div class="complemento">
+        <div class="title_sec6">Saiba mais</div>
+        <div class="conteudo_box">
+          <h3>Sobre</h3>
+          <h3>Serviços</h3>
+          <h3>Termos</h3>
+          <h3>Equipe</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Suporte</div>
+        <div class="conteudo_box">
+          <h3>Central de Ajuda</h3>
+          <h3>Mande-nos uma Mensagem</h3>
+          <h3>Informação</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Contato</div>
+        <div class="conteudo_box">
+          <i id="margin_icon" class="fa-brands fa-google"></i>
+          <i id="margin_icon" class="fa-brands fa-facebook"></i>
+          <i id="margin_icon" class="fa-brands fa-twitter"></i>
+          <i id="margin_icon" class="fa-brands fa-instagram"></i>
+          <i id="margin_icon" class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+    <script src="../javaScript/index.js"></script>
+  </body>
+</html>

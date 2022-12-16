@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Vents | Configuração de Participante</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+        <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="config">
+      <div class="config_box">
+        <div class="config_box_check">
+          <div class="habilitar_check">
+            <div class="title">Habilitar check-in no torneio?</div>
+            <div class="check_option">
+              <div class="box_option">
+                <button value="jogador">Jogador</button>
+              </div>
+              <div class="box_option">
+                <button value="organizador">Organizador</button>
+              </div>
+              <div class="box_option">
+                <button value="nenhum">Nenhum</button>
+              </div>
+            </div>
+          </div>
+          <div class="habilitar_check">
+            <div class="box_check">
+              <div class="title_check">Início do check-in</div>
+              <div class="box_date_check">
+                <div class="input_date">
+                  <input type="date" name="date" id="date" />
+                </div>
+                <div class="input_time">
+                  <input type="time" name="time" id="time" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="habilitar_check">
+            <div class="box_check">
+              <div class="title_check">Fim do check-in</div>
+              <div class="box_date_check">
+                <div class="input_date">
+                  <input type="date" name="date" id="date" />
+                </div>
+                <div class="input_time">
+                  <input type="time" name="time" id="time" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="config_box_check">
+          <div class="participantes">
+            <div class="title">Participante</div>
+            <div class="box_buttons">
+              <div class="buttons">
+                <button value="jogador">Jogador</button>
+              </div>
+              <div class="buttons">
+                <button value="equipe">Equipe</button>
+              </div>
+            </div>
+          </div>
+          <div class="participantes">
+            <div class="title_parti">Número mínimo de jogadores por equipe</div>
+            <div class="input_quanti_parti">
+              <input type="number" name="number" id="number" />
+            </div>
+          </div>
+          <div class="participantes">
+            <div class="title_parti">Número máximo de jogadores por equipe</div>
+            <div class="input_quanti_parti">
+              <input type="number" name="number" id="number" />
+            </div>
+          </div>
+          <input type="submit" value="Atualizar" />
+        </div>
+      </div>
+    </section>
+    <section class="sec6" id="contate_nos">
+      <div class="complemento">
+        <div class="title_sec6">Saiba mais</div>
+        <div class="conteudo_box">
+          <h3>Sobre</h3>
+          <h3>Serviços</h3>
+          <h3>Termos</h3>
+          <h3>Equipe</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Suporte</div>
+        <div class="conteudo_box">
+          <h3>Central de Ajuda</h3>
+          <h3>Mande-nos uma Mensagem</h3>
+          <h3>Informação</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Contato</div>
+        <div class="conteudo_box">
+          <i id="margin_icon" class="fa-brands fa-google"></i>
+          <i id="margin_icon" class="fa-brands fa-facebook"></i>
+          <i id="margin_icon" class="fa-brands fa-twitter"></i>
+          <i id="margin_icon" class="fa-brands fa-instagram"></i>
+          <i id="margin_icon" class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+    <script src="../javaScript/index.js"></script>
+  </body>
+</html>

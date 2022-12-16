@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Suez+One&family=Teko:wght@300&display=swap');
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #252D44;
+}
+
+/*Inicia style da pagina de listagem dos torneios*/
+.container {
+  padding: 2vw;
+}
+
+section.list_torneio {}
+
+section.list_torneio .box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.list_torneio .box .box_list {
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E2033;
+}
+
+section.list_torneio .box .box_list .img {
+  width: 100%;
+  height: 225px;
+}
+
+section.list_torneio .box .box_list .img img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+section.list_torneio .box .box_list .title {
+  text-align: justify;
+  padding: 15px;
+}
+
+section.list_torneio .box .box_list .title .name_title {
+  font-size: 25px;
+  margin-bottom: 1%;
+  color: white;
+}
+
+section.list_torneio .box .box_list .title .date {
+  font-size: 15px;
+  color: #838383;
+}
+
+section.list_torneio .box .box_list .description {
+  text-align: justify;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.list_torneio .box .box_list .description .description_mode {
+  margin-right: 15%;
+}
+
+section.list_torneio .box .box_list .description .description_title {
+  font-size: 25px;
+  margin-bottom: 1%;
+  color: #e5e5e5;
+}
+
+section.list_torneio .box .box_list .description .description_name {
+  font-size: 15px;
+  color: darkgray;
+}
+
+section.list_torneio .box .box_list .button_entrar {
+  text-align: center;
+  margin-top: 5%;
+}
+
+section.list_torneio .box .box_list .button_entrar button {
+  border: none;
+  background-color: rgb(8, 8, 150);
+  color: white;
+  padding: 5%;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.list_torneio .box .box_list .button_entrar button:hover {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 5%;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.list_torneio .box .box_list .premios {
+  margin-top: 8%;
+  text-align: center;
+}
+
+section.list_torneio .box .box_list .premios button {
+  margin-top: 2%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: beige;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+section.list_torneio .box .box_list .premios .lugares {
+  display: none;
+}
+
+section.list_torneio .box .box_list .premios .posicao {
+  padding: 15px;
+  color: white;
+}
+
+section.list_torneio .box .box_list .premios .posicao .lugar {
+  font-size: 15px;
+  color: white;
+}
+/*Fim da pagina de listagem de torneio*/

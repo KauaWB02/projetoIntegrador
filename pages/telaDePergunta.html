@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <title>E-Vents | Pergunta</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2593a2acd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo left">
+        <img src="../assets/images/logoheader.jpeg" alt="" />
+      </div>
+      <nav class="left">
+        <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu" id="menu" openMenu="1" onclick="clickmenu()">
+        <i id="iconMenu" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="menu_mobile" id="menu_mobile">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ínicio</a></li>
+          <li><a href="listaTorneio.html">Torneios</a></li>
+          <li><a href="../index.html#contate_nos">Contato</a></li>
+          <li><a href="../index.html#sobre_nos">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pergunta_title" id="title_pergunta">
+      <h1>O que deseja com nossos serviços?</h1>
+    </div>
+    <section class="perguntatela">
+      <div class="box_tela" id="box_tela" onclick="functionUsuario('jogador')">
+        <h3>EU QUERO A GLÓRIA!</h3>
+        <a href="#">
+          <img src="../assets/images/game.png" alt="controle" />
+        </a>
+        <p>
+          Seja um jogador, forme uma equipe e participe de torneios emocionantes
+          e com grandes recompensas
+        </p>
+      </div>
+      <div class="box_tela" id="box_tela" onclick="functionUsuario('colaborador')">
+        <h3>EU QUERO DISCÓRDIA!</h3>
+        <a href="#">
+          <img src="../assets/images/trophy.png" alt="trofeu" id="img" />
+        </a>
+        <p>
+          Seja o responsável pela inscrições dos jogadores e pelas grandes
+          batalhas
+        </p>
+      </div>
+    </section>
+    <section class="register" id="jogador">
+      <h1>Crie conta | Jogador(a)</h1>
+      <form name='cadastro'>
+        <div id="message"></div>
+        <div class="register_form">
+          <div class="register_form_group">
+            <label for="name">Nome de Usuário:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="register_form_group">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="register_form_group">
+            <label for="password2">Digite a senha novamente:</label>
+            <input type="password" name="password2" id="password2" />
+          </div>
+          <div class="register_form_group">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="register_form_group">
+            <input
+              class="left"
+              type="checkbox"
+              name="termos_uso"
+              id="termos_uso"
+            />
+            <label class="right" for="termos_uso">
+              Eu li e concordo com o <a href="">Termos de uso.</a></label
+            >
+          </div>
+          <div class="clear"></div>
+          <div class="register_form_group">
+            <input type="button" name="submit" id="submit" value="Cadastrar" onclick="functionCadastra()"/>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="register" id="colaborador">
+      <h1>Crie conta | Colaborador(a)</h1>
+      <form name='cadastroColaborador'>
+        <div id="message"></div>
+        <div class="register_form">
+          <div class="register_form_group">
+            <label for="name">Nome de Usuário:</label>
+            <input type="text" name="name" id="name_c" />
+          </div>
+          <div class="register_form_group">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password_c" />
+          </div>
+          <div class="register_form_group">
+            <label for="password2">Digite a senha novamente:</label>
+            <input type="password" name="password2" id="password2_c" />
+          </div>
+          <div class="register_form_group">
+            <label for="cnpj">Cnpj da empresa:</label>
+            <input type="text" name="cnpj" id="cnpj_c" />
+          </div>
+          <div class="register_form_group">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email_c" />
+          </div>
+          <div class="register_form_group">
+            <input
+              class="left"
+              type="checkbox"
+              name="termos_uso"
+              id="termos_uso_c"
+            />
+            <label class="right" for="termos_uso">
+              Eu li e concordo com o <a href="">Termos de uso.</a></label
+            >
+          </div>
+          <div class="clear"></div>
+          <div class="register_form_group">
+            <input type="button" name="submit" id="submit" value="Cadastrar" onclick="functionCadastra()"/>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="sec6" id="contate_nos">
+      <div class="complemento">
+        <div class="title_sec6">Saiba mais</div>
+        <div class="conteudo_box">
+          <h3>Sobre</h3>
+          <h3>Serviços</h3>
+          <h3>Termos</h3>
+          <h3>Equipe</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Suporte</div>
+        <div class="conteudo_box">
+          <h3>Central de Ajuda</h3>
+          <h3>Mande-nos uma Mensagem</h3>
+          <h3>Informação</h3>
+        </div>
+      </div>
+
+      <div class="complemento">
+        <div class="title_sec6">Contato</div>
+        <div class="conteudo_box">
+          <i id="margin_icon" class="fa-brands fa-google"></i>
+          <i id="margin_icon" class="fa-brands fa-facebook"></i>
+          <i id="margin_icon" class="fa-brands fa-twitter"></i>
+          <i id="margin_icon" class="fa-brands fa-instagram"></i>
+          <i id="margin_icon" class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+    <script src="../javaScript/index.js"></script>
+  </body>
+</html>
