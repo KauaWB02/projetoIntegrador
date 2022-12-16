@@ -75,7 +75,6 @@ function functionCadastra() {
       Storage.setItem('senha', senha1);
       Storage.setItem('termo', termos);
       Storage.setItem('funcao', 'jogador');
-
     }
   } else if (colaborador.style.display === 'block') {
     console.log('Entrou aqui2')
